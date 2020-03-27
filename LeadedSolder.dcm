@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CY62256N
+D Cypress 256Kbit SRAM
+K ram, sram
+F https://www.cypress.com/file/43841/download
+$ENDCMP
+#
+$CMP LC331632M-12
+F https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html
+$ENDCMP
+#
+$CMP PLCCZ80
+D Chip-carrier PLCC version of the Zilog Z80
+F http://www.zilog.com/docs/z80/ps0178.pdf
+$ENDCMP
+#
+#End Doc Library

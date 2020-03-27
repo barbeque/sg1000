@@ -1,0 +1,435 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6375 3900 7325 3900
+Wire Wire Line
+	7450 3900 7450 3825
+$Comp
+L power:GND #PWR0101
+U 1 1 5E7D928A
+P 7450 4200
+F 0 "#PWR0101" H 7450 3950 50  0001 C CNN
+F 1 "GND" H 7455 4027 50  0000 C CNN
+F 2 "" H 7450 4200 50  0001 C CNN
+F 3 "" H 7450 4200 50  0001 C CNN
+	1    7450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E7D9656
+P 7450 3825
+F 0 "#PWR0102" H 7450 3675 50  0001 C CNN
+F 1 "+5V" H 7465 3998 50  0000 C CNN
+F 2 "" H 7450 3825 50  0001 C CNN
+F 3 "" H 7450 3825 50  0001 C CNN
+	1    7450 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E7D9A30
+P 7325 4050
+F 0 "C1" H 7440 4096 50  0000 L CNN
+F 1 "0.1µF" H 7440 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7363 3900 50  0001 C CNN
+F 3 "~" H 7325 4050 50  0001 C CNN
+	1    7325 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7325 3900
+Wire Wire Line
+	7325 3900 7450 3900
+Wire Wire Line
+	7450 4200 7325 4200
+Wire Wire Line
+	7200 4200 7200 4000
+Wire Wire Line
+	7200 4000 6375 4000
+Connection ~ 7325 4200
+Wire Wire Line
+	7325 4200 7200 4200
+Text Label 6375 3000 0    50   ~ 0
+D0
+Text Label 6375 3100 0    50   ~ 0
+D1
+Text Label 6375 3200 0    50   ~ 0
+D2
+Text Label 6375 3300 0    50   ~ 0
+D3
+Text Label 6375 3400 0    50   ~ 0
+D4
+Text Label 6375 3500 0    50   ~ 0
+D5
+Text Label 6375 3600 0    50   ~ 0
+D6
+Text Label 6375 3700 0    50   ~ 0
+D7
+Entry Wire Line
+	6525 3700 6625 3800
+Entry Wire Line
+	6525 3600 6625 3700
+Entry Wire Line
+	6525 3500 6625 3600
+Entry Wire Line
+	6525 3400 6625 3500
+Entry Wire Line
+	6525 3300 6625 3400
+Entry Wire Line
+	6525 3200 6625 3300
+Entry Wire Line
+	6525 3100 6625 3200
+Entry Wire Line
+	6525 3000 6625 3100
+Wire Wire Line
+	8775 3650 8450 3650
+Wire Wire Line
+	8450 3750 8775 3750
+Wire Wire Line
+	8450 3850 8775 3850
+Wire Wire Line
+	8450 3950 8775 3950
+Wire Wire Line
+	8450 4050 8775 4050
+Wire Wire Line
+	8775 3550 8450 3550
+Wire Wire Line
+	8775 3450 8450 3450
+Wire Wire Line
+	8775 3350 8450 3350
+Wire Wire Line
+	8775 3250 8450 3250
+Wire Wire Line
+	8775 3150 8450 3150
+Wire Wire Line
+	8775 3050 8450 3050
+Wire Wire Line
+	8775 2950 8450 2950
+Wire Wire Line
+	8775 2850 8450 2850
+Wire Wire Line
+	8775 2750 8450 2750
+Wire Wire Line
+	8775 2650 8450 2650
+Wire Wire Line
+	8775 2550 8450 2550
+Text Label 8725 4050 2    50   ~ 0
+A15
+Text Label 8725 3950 2    50   ~ 0
+A14
+Text Label 8725 3850 2    50   ~ 0
+A13
+Text Label 8725 3750 2    50   ~ 0
+A12
+Text Label 8725 3650 2    50   ~ 0
+A11
+Text Label 8725 3550 2    50   ~ 0
+A10
+Text Label 8725 3450 2    50   ~ 0
+A9
+Text Label 8725 3350 2    50   ~ 0
+A8
+Text Label 8725 3250 2    50   ~ 0
+A7
+Text Label 8725 3150 2    50   ~ 0
+A6
+Text Label 8725 3050 2    50   ~ 0
+A5
+Text Label 8725 2950 2    50   ~ 0
+A4
+Text Label 8725 2850 2    50   ~ 0
+A3
+Text Label 8725 2750 2    50   ~ 0
+A2
+Text Label 8725 2650 2    50   ~ 0
+A1
+Text Label 8725 2550 2    50   ~ 0
+A0
+Entry Wire Line
+	8350 2450 8450 2550
+Entry Wire Line
+	8350 2550 8450 2650
+Entry Wire Line
+	8350 2650 8450 2750
+Entry Wire Line
+	8350 2750 8450 2850
+Entry Wire Line
+	8350 2850 8450 2950
+Entry Wire Line
+	8350 2950 8450 3050
+Entry Wire Line
+	8350 3050 8450 3150
+Entry Wire Line
+	8350 3150 8450 3250
+Entry Wire Line
+	8350 3250 8450 3350
+Entry Wire Line
+	8350 3350 8450 3450
+Entry Wire Line
+	8350 3450 8450 3550
+Entry Wire Line
+	8350 3550 8450 3650
+Entry Wire Line
+	8350 3650 8450 3750
+Entry Wire Line
+	8350 3750 8450 3850
+Entry Wire Line
+	8350 3850 8450 3950
+Entry Wire Line
+	8350 3950 8450 4050
+Wire Bus Line
+	8350 6350 5325 6350
+Wire Wire Line
+	5675 3000 5425 3000
+Entry Wire Line
+	5325 2900 5425 3000
+Entry Wire Line
+	5325 3000 5425 3100
+Entry Wire Line
+	5325 3100 5425 3200
+Entry Wire Line
+	5325 3200 5425 3300
+Entry Wire Line
+	5325 3300 5425 3400
+Entry Wire Line
+	5325 3400 5425 3500
+Entry Wire Line
+	5325 3500 5425 3600
+Entry Wire Line
+	5325 3600 5425 3700
+Entry Wire Line
+	5325 3700 5425 3800
+Entry Wire Line
+	5325 3800 5425 3900
+Wire Wire Line
+	5675 3900 5425 3900
+Wire Wire Line
+	5675 3800 5425 3800
+Wire Wire Line
+	5425 3700 5675 3700
+Wire Wire Line
+	5675 3600 5425 3600
+Wire Wire Line
+	5425 3500 5675 3500
+Wire Wire Line
+	5675 3400 5425 3400
+Wire Wire Line
+	5425 3300 5675 3300
+Wire Wire Line
+	5675 3200 5425 3200
+Wire Wire Line
+	5425 3100 5675 3100
+Wire Wire Line
+	6375 3700 6525 3700
+Wire Wire Line
+	6375 3600 6525 3600
+Wire Wire Line
+	6375 3500 6525 3500
+Wire Wire Line
+	6375 3400 6525 3400
+Wire Wire Line
+	6375 3300 6525 3300
+Wire Wire Line
+	6375 3200 6525 3200
+Wire Wire Line
+	6375 3100 6525 3100
+Wire Wire Line
+	6375 3000 6525 3000
+$Comp
+L LeadedSolder:CY62256N U1
+U 1 1 5E810C68
+P 6025 2950
+F 0 "U1" H 6025 3165 50  0000 C CNN
+F 1 "CY62256N" H 6025 3074 50  0000 C CNN
+F 2 "LeadedSolder:CY62256N" H 6025 3100 50  0001 C CNN
+F 3 "https://www.cypress.com/file/43841/download" H 6025 3100 50  0001 C CNN
+F 4 "2015-CY62256NLL-55SNXE-ND" H 6025 3100 50  0001 C CNN "DigiKey"
+	1    6025 2950
+	1    0    0    -1  
+$EndComp
+Text Label 5625 3000 2    50   ~ 0
+A0
+Text Label 5625 3100 2    50   ~ 0
+A1
+Text Label 5625 3200 2    50   ~ 0
+A2
+Text Label 5625 3300 2    50   ~ 0
+A3
+Text Label 5625 3400 2    50   ~ 0
+A4
+Text Label 5625 3500 2    50   ~ 0
+A5
+Text Label 5625 3600 2    50   ~ 0
+A6
+Text Label 5625 3700 2    50   ~ 0
+A7
+Text Label 5625 3800 2    50   ~ 0
+A8
+Text Label 5625 3900 2    50   ~ 0
+A9
+Wire Wire Line
+	5675 4000 5425 4000
+Entry Wire Line
+	5325 3900 5425 4000
+Text Label 5625 4000 2    50   ~ 0
+A10
+$Comp
+L power:GND #PWR0103
+U 1 1 5E8175BA
+P 5475 4550
+F 0 "#PWR0103" H 5475 4300 50  0001 C CNN
+F 1 "GND" H 5480 4377 50  0000 C CNN
+F 2 "" H 5475 4550 50  0001 C CNN
+F 3 "" H 5475 4550 50  0001 C CNN
+	1    5475 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 4550 5475 4400
+Wire Wire Line
+	5475 4100 5675 4100
+Wire Wire Line
+	5675 4200 5475 4200
+Connection ~ 5475 4200
+Wire Wire Line
+	5475 4200 5475 4100
+Wire Wire Line
+	5675 4300 5475 4300
+Connection ~ 5475 4300
+Wire Wire Line
+	5475 4300 5475 4200
+Wire Wire Line
+	5675 4400 5475 4400
+Connection ~ 5475 4400
+Wire Wire Line
+	5475 4400 5475 4300
+$Comp
+L LeadedSolder:PLCCZ80 U2
+U 1 1 5E823D20
+P 9275 2350
+F 0 "U2" H 9275 2465 50  0000 C CNN
+F 1 "PLCCZ80" H 9275 2374 50  0000 C CNN
+F 2 "Package_LCC:PLCC-44_THT-Socket" H 9275 2350 50  0001 C CNN
+F 3 "http://www.zilog.com/docs/z80/ps0178.pdf" H 9275 2350 50  0001 C CNN
+	1    9275 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8775 4300 8500 4300
+Wire Wire Line
+	8500 4300 8500 5050
+$Comp
+L Device:C C2
+U 1 1 5E837BA5
+P 8650 5050
+F 0 "C2" V 8398 5050 50  0000 C CNN
+F 1 "0.1µF" V 8489 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8688 4900 50  0001 C CNN
+F 3 "~" H 8650 5050 50  0001 C CNN
+	1    8650 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E8384E9
+P 8800 5275
+F 0 "#PWR0104" H 8800 5025 50  0001 C CNN
+F 1 "GND" H 8805 5102 50  0000 C CNN
+F 2 "" H 8800 5275 50  0001 C CNN
+F 3 "" H 8800 5275 50  0001 C CNN
+	1    8800 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5E8389D1
+P 8500 4300
+F 0 "#PWR0105" H 8500 4150 50  0001 C CNN
+F 1 "+5V" H 8515 4473 50  0000 C CNN
+F 2 "" H 8500 4300 50  0001 C CNN
+F 3 "" H 8500 4300 50  0001 C CNN
+	1    8500 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 4300
+Wire Wire Line
+	8800 4550 8775 4550
+Wire Wire Line
+	8775 4550 8775 4400
+Wire Wire Line
+	8800 4550 8800 5050
+Connection ~ 8800 5050
+Wire Wire Line
+	8800 5050 8800 5275
+Wire Wire Line
+	9775 2550 9975 2550
+Wire Wire Line
+	9775 2650 9975 2650
+Wire Wire Line
+	9775 2750 9975 2750
+Wire Wire Line
+	9775 2850 9975 2850
+Wire Wire Line
+	9775 2950 9975 2950
+Wire Wire Line
+	9775 3050 9975 3050
+Wire Wire Line
+	9775 3150 9975 3150
+Wire Wire Line
+	9775 3250 9975 3250
+Entry Wire Line
+	9975 3250 10075 3350
+Entry Wire Line
+	9975 3150 10075 3250
+Entry Wire Line
+	9975 3050 10075 3150
+Entry Wire Line
+	9975 2950 10075 3050
+Entry Wire Line
+	9975 2850 10075 2950
+Entry Wire Line
+	9975 2750 10075 2850
+Entry Wire Line
+	9975 2650 10075 2750
+Entry Wire Line
+	9975 2550 10075 2650
+Wire Bus Line
+	6625 2000 10075 2000
+Text Label 9850 2550 0    50   ~ 0
+D0
+Text Label 9850 2650 0    50   ~ 0
+D1
+Text Label 9850 2750 0    50   ~ 0
+D2
+Text Label 9850 2850 0    50   ~ 0
+D3
+Text Label 9850 2950 0    50   ~ 0
+D4
+Text Label 9850 3050 0    50   ~ 0
+D5
+Text Label 9850 3150 0    50   ~ 0
+D6
+Text Label 9850 3250 0    50   ~ 0
+D7
+Wire Bus Line
+	5325 2900 5325 6350
+Wire Bus Line
+	6625 2000 6625 3800
+Wire Bus Line
+	10075 2000 10075 3350
+Wire Bus Line
+	8350 2450 8350 6350
+$EndSCHEMATC
