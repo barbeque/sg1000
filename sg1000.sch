@@ -14,82 +14,50 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	7450 3900 7450 3825
+	7650 3700 7650 3625
 $Comp
 L power:GND #PWR0101
 U 1 1 5E7D928A
-P 7450 4200
-F 0 "#PWR0101" H 7450 3950 50  0001 C CNN
-F 1 "GND" H 7455 4027 50  0000 C CNN
-F 2 "" H 7450 4200 50  0001 C CNN
-F 3 "" H 7450 4200 50  0001 C CNN
-	1    7450 4200
+P 7650 4000
+F 0 "#PWR0101" H 7650 3750 50  0001 C CNN
+F 1 "GND" H 7655 3827 50  0000 C CNN
+F 2 "" H 7650 4000 50  0001 C CNN
+F 3 "" H 7650 4000 50  0001 C CNN
+	1    7650 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 5E7D9656
-P 7450 3825
-F 0 "#PWR0102" H 7450 3675 50  0001 C CNN
-F 1 "+5V" H 7465 3998 50  0000 C CNN
-F 2 "" H 7450 3825 50  0001 C CNN
-F 3 "" H 7450 3825 50  0001 C CNN
-	1    7450 3825
+P 7650 3625
+F 0 "#PWR0102" H 7650 3475 50  0001 C CNN
+F 1 "+5V" H 7665 3798 50  0000 C CNN
+F 2 "" H 7650 3625 50  0001 C CNN
+F 3 "" H 7650 3625 50  0001 C CNN
+	1    7650 3625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5E7D9A30
-P 7325 4050
-F 0 "C1" H 7440 4096 50  0000 L CNN
-F 1 "0.1µF" H 7440 4005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7363 3900 50  0001 C CNN
-F 3 "~" H 7325 4050 50  0001 C CNN
-	1    7325 4050
+P 7525 3850
+F 0 "C1" H 7640 3896 50  0000 L CNN
+F 1 "0.1µF" H 7640 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7563 3700 50  0001 C CNN
+F 3 "~" H 7525 3850 50  0001 C CNN
+	1    7525 3850
 	1    0    0    -1  
 $EndComp
-Connection ~ 7325 3900
+Connection ~ 7525 3700
 Wire Wire Line
-	7325 3900 7450 3900
+	7525 3700 7650 3700
 Wire Wire Line
-	7450 4200 7325 4200
+	7650 4000 7525 4000
 Wire Wire Line
-	7200 4200 7200 4000
-Connection ~ 7325 4200
+	7400 4000 7400 3800
+Connection ~ 7525 4000
 Wire Wire Line
-	7325 4200 7200 4200
-Text Label 6375 3000 0    50   ~ 0
-D0
-Text Label 6375 3100 0    50   ~ 0
-D1
-Text Label 6375 3200 0    50   ~ 0
-D2
-Text Label 6375 3300 0    50   ~ 0
-D3
-Text Label 6375 3400 0    50   ~ 0
-D4
-Text Label 6375 3500 0    50   ~ 0
-D5
-Text Label 6375 3600 0    50   ~ 0
-D6
-Text Label 6375 3700 0    50   ~ 0
-D7
-Entry Wire Line
-	6525 3700 6625 3800
-Entry Wire Line
-	6525 3600 6625 3700
-Entry Wire Line
-	6525 3500 6625 3600
-Entry Wire Line
-	6525 3400 6625 3500
-Entry Wire Line
-	6525 3300 6625 3400
-Entry Wire Line
-	6525 3200 6625 3300
-Entry Wire Line
-	6525 3100 6625 3200
-Entry Wire Line
-	6525 3000 6625 3100
+	7525 4000 7400 4000
 Wire Wire Line
 	8775 3650 8450 3650
 Wire Wire Line
@@ -220,34 +188,6 @@ Wire Wire Line
 	5675 3200 5425 3200
 Wire Wire Line
 	5425 3100 5675 3100
-Wire Wire Line
-	6375 3700 6525 3700
-Wire Wire Line
-	6375 3600 6525 3600
-Wire Wire Line
-	6375 3500 6525 3500
-Wire Wire Line
-	6375 3400 6525 3400
-Wire Wire Line
-	6375 3300 6525 3300
-Wire Wire Line
-	6375 3200 6525 3200
-Wire Wire Line
-	6375 3100 6525 3100
-Wire Wire Line
-	6375 3000 6525 3000
-$Comp
-L LeadedSolder:CY62256N U1
-U 1 1 5E810C68
-P 6025 2950
-F 0 "U1" H 6025 3165 50  0000 C CNN
-F 1 "CY62256N" H 6025 3074 50  0000 C CNN
-F 2 "LeadedSolder:CY62256N" H 6025 3100 50  0001 C CNN
-F 3 "https://www.cypress.com/file/43841/download" H 6025 3100 50  0001 C CNN
-F 4 "2015-CY62256NLL-55SNXE-ND" H 6025 3100 50  0001 C CNN "DigiKey"
-	1    6025 2950
-	1    0    0    -1  
-$EndComp
 Text Label 5625 3000 2    50   ~ 0
 A0
 Text Label 5625 3100 2    50   ~ 0
@@ -274,36 +214,6 @@ Entry Wire Line
 	5325 3900 5425 4000
 Text Label 5625 4000 2    50   ~ 0
 A10
-$Comp
-L power:GND #PWR0103
-U 1 1 5E8175BA
-P 5475 4550
-F 0 "#PWR0103" H 5475 4300 50  0001 C CNN
-F 1 "GND" H 5480 4377 50  0000 C CNN
-F 2 "" H 5475 4550 50  0001 C CNN
-F 3 "" H 5475 4550 50  0001 C CNN
-	1    5475 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5475 4550 5475 4400
-Wire Wire Line
-	5475 4100 5675 4100
-Wire Wire Line
-	5675 4200 5475 4200
-Connection ~ 5475 4200
-Wire Wire Line
-	5475 4200 5475 4100
-Wire Wire Line
-	5675 4300 5475 4300
-Connection ~ 5475 4300
-Wire Wire Line
-	5475 4300 5475 4200
-Wire Wire Line
-	5675 4400 5475 4400
-Connection ~ 5475 4400
-Wire Wire Line
-	5475 4400 5475 4300
 $Comp
 L LeadedSolder:PLCCZ80 U10
 U 1 1 5E823D20
@@ -394,8 +304,6 @@ Entry Wire Line
 	9975 2650 10075 2750
 Entry Wire Line
 	9975 2550 10075 2650
-Wire Bus Line
-	6625 2000 10075 2000
 Text Label 9850 2550 0    50   ~ 0
 D0
 Text Label 9850 2650 0    50   ~ 0
@@ -458,29 +366,14 @@ Text Label 9775 3400 0    50   ~ 0
 CLK
 Text Label 10075 3900 0    50   ~ 0
 ~IORQ
-Text Label 6525 4300 0    50   ~ 0
+Text Label 6700 3100 0    50   ~ 0
 ~RD
-Wire Wire Line
-	6525 4300 6375 4300
-Text Label 6525 4200 0    50   ~ 0
+Text Label 6700 3000 0    50   ~ 0
 ~WR
-Wire Wire Line
-	6525 4200 6375 4200
-Text Label 6525 4575 0    50   ~ 0
+Text Label 6700 3200 0    50   ~ 0
 ~DSRAM
-Text Label 6525 4725 0    50   ~ 0
+Text Label 6700 3325 0    50   ~ 0
 ~CS_WRAM
-Wire Wire Line
-	6525 4725 6425 4725
-Wire Wire Line
-	6425 4725 6425 4575
-Wire Wire Line
-	6425 4400 6375 4400
-Wire Wire Line
-	6525 4575 6425 4575
-Connection ~ 6425 4575
-Wire Wire Line
-	6425 4575 6425 4400
 Wire Wire Line
 	10075 3900 9775 3900
 $Comp
@@ -735,7 +628,7 @@ Wire Wire Line
 	2850 7400 2850 7175
 Wire Wire Line
 	2850 7175 3075 7175
-Text Notes 5750 4875 0    50   ~ 0
+Text Notes 5750 5725 0    50   ~ 0
 No ~CS2~ on this RAM, so no jumpers
 $Comp
 L Device:Q_PNP_EBC Q1c1
@@ -1138,36 +1031,6 @@ F 3 "" H 1875 6400 50  0001 C CNN
 	1    1875 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L AS6C62256:AS6C62256-DIP U11
-U 1 1 6238883D
-P 6500 3075
-F 0 "U11" H 6500 3280 50  0000 C CNN
-F 1 "AS6C62256-DIP" H 6500 3189 50  0000 C CNN
-F 2 "Housings_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6500 3075 50  0001 C CNN
-F 3 "" H 6500 3075 50  0001 C CNN
-F 4 "1450-1033-ND" H 6500 3098 50  0000 C CNN "DigiKey"
-	1    6500 3075
-	1    0    0    -1  
-$EndComp
-Text Notes 5500 1775 0    50   ~ 0
-TODO: Convert pinout to the DIP format (SMD is obsolete)
-Connection ~ 6975 4000
-Connection ~ 6975 3900
-Wire Wire Line
-	6975 4000 6375 4000
-Wire Wire Line
-	7200 4000 6975 4000
-Wire Wire Line
-	6975 3900 7325 3900
-Wire Wire Line
-	6375 3900 6975 3900
-Wire Bus Line
-	10075 2000 10075 3350
-Wire Bus Line
-	5325 2900 5325 6350
-Wire Bus Line
-	6625 2000 6625 3800
 Wire Wire Line
 	8450 4050 8775 4050
 Wire Wire Line
@@ -1176,6 +1039,125 @@ Entry Wire Line
 	8350 3950 8450 4050
 Entry Wire Line
 	8350 3850 8450 3950
+Wire Wire Line
+	6575 3800 7400 3800
+Wire Wire Line
+	6575 3700 7525 3700
+$Comp
+L power:GND #PWR0103
+U 1 1 5E8175BA
+P 4975 4550
+F 0 "#PWR0103" H 4975 4300 50  0001 C CNN
+F 1 "GND" H 4980 4377 50  0000 C CNN
+F 2 "" H 4975 4550 50  0001 C CNN
+F 3 "" H 4975 4550 50  0001 C CNN
+	1    4975 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 4100 4975 4200
+Wire Wire Line
+	4975 4100 5675 4100
+Wire Wire Line
+	4975 4200 5675 4200
+Connection ~ 4975 4200
+Wire Wire Line
+	4975 4200 4975 4300
+Wire Wire Line
+	4975 4300 5675 4300
+Connection ~ 4975 4300
+Wire Wire Line
+	4975 4300 4975 4400
+Wire Wire Line
+	4975 4400 5675 4400
+Connection ~ 4975 4400
+Wire Wire Line
+	4975 4400 4975 4550
+Wire Bus Line
+	10075 2000 7975 2000
+Wire Bus Line
+	7975 2000 7975 5925
+Wire Bus Line
+	7975 5925 5500 5925
+Entry Wire Line
+	5500 4500 5600 4600
+Entry Wire Line
+	5500 4600 5600 4700
+Entry Wire Line
+	5500 4700 5600 4800
+Entry Wire Line
+	5500 4800 5600 4900
+Entry Wire Line
+	5500 4900 5600 5000
+Entry Wire Line
+	5500 5000 5600 5100
+Entry Wire Line
+	5500 5100 5600 5200
+Entry Wire Line
+	5500 5200 5600 5300
+Wire Wire Line
+	5600 5300 5675 5300
+Wire Wire Line
+	5675 5200 5600 5200
+Wire Wire Line
+	5600 5100 5675 5100
+Wire Wire Line
+	5600 5000 5675 5000
+Wire Wire Line
+	5600 4900 5675 4900
+Wire Wire Line
+	5600 4800 5675 4800
+Wire Wire Line
+	5675 4700 5600 4700
+Wire Wire Line
+	5600 4600 5675 4600
+Text Label 5600 4600 0    50   ~ 0
+D0
+Text Label 5600 4700 0    50   ~ 0
+D1
+Text Label 5600 4800 0    50   ~ 0
+D2
+Text Label 5600 4900 0    50   ~ 0
+D3
+Text Label 5600 5000 0    50   ~ 0
+D4
+Text Label 5600 5100 0    50   ~ 0
+D5
+Text Label 5600 5200 0    50   ~ 0
+D6
+Text Label 5600 5300 0    50   ~ 0
+D7
+$Comp
+L AS6C62256:AS6C62256-DIP U11
+U 1 1 6238883D
+P 6125 2850
+F 0 "U11" H 6125 3055 50  0000 C CNN
+F 1 "AS6C62256-DIP" H 6125 2964 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6125 2850 50  0001 C CNN
+F 3 "" H 6125 2850 50  0001 C CNN
+F 4 "1450-1033-ND" H 6125 2873 50  0000 C CNN "DigiKey"
+	1    6125 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3000 6575 3000
+Wire Wire Line
+	6700 3100 6575 3100
+Wire Wire Line
+	6700 3325 6625 3325
+Wire Wire Line
+	6625 3325 6625 3200
+Wire Wire Line
+	6625 3200 6575 3200
+Wire Wire Line
+	6625 3200 6700 3200
+Wire Bus Line
+	10075 2000 10075 3350
+Wire Bus Line
+	5325 2900 5325 6350
+Wire Bus Line
+	5500 4475 5500 5925
 Wire Bus Line
 	8350 2450 8350 6350
+Connection ~ 6625 3200
 $EndSCHEMATC
