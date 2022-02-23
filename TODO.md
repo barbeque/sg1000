@@ -6,3 +6,4 @@
 - [ ] make a footprint for the cart slot part
 - [ ] will the power transistor setup from leako work?
 - [x] populate all the z80 pins with labels
+- [x] double check NMI transistor pinout, use a PNP i already stock (3906?)

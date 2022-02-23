@@ -620,17 +620,6 @@ Wire Wire Line
 Connection ~ 9625 5150
 Text Label 4825 6500 0    50   ~ 0
 ~NMI
-$Comp
-L Device:Q_PNP_ECB Q1C
-U 1 1 621A544C
-P 4325 6400
-F 0 "Q1C" V 4560 6400 50  0000 C CNN
-F 1 "A733" V 4651 6400 50  0000 C CNN
-F 2 "" H 4525 6500 50  0001 C CNN
-F 3 "~" H 4325 6400 50  0001 C CNN
-	1    4325 6400
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	4525 6500 4725 6500
 $Comp
@@ -678,7 +667,6 @@ F 3 "~" H 4125 6275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4125 6375 4125 6500
-Connection ~ 4125 6500
 Text Label 4125 6025 0    50   ~ 0
 ~M1
 Wire Wire Line
@@ -768,4 +756,17 @@ Wire Bus Line
 	8350 2450 8350 6350
 Text Notes 5750 4875 0    50   ~ 0
 No ~CS2~ on this RAM, so no jumpers
+$Comp
+L Device:Q_PNP_EBC Q1c
+U 1 1 621DF413
+P 4325 6400
+F 0 "Q1c" V 4560 6400 50  0000 C CNN
+F 1 "2n3906" V 4651 6400 50  0000 C CNN
+F 2 "" H 4525 6500 50  0001 C CNN
+F 3 "~" H 4325 6400 50  0001 C CNN
+F 4 "641-1946-ND" V 4325 6400 50  0001 C CNN "DigiKey"
+	1    4325 6400
+	0    -1   1    0   
+$EndComp
+Connection ~ 4125 6500
 $EndSCHEMATC
