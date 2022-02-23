@@ -14,8 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6375 3900 7325 3900
-Wire Wire Line
 	7450 3900 7450 3825
 $Comp
 L power:GND #PWR0101
@@ -57,8 +55,6 @@ Wire Wire Line
 	7450 4200 7325 4200
 Wire Wire Line
 	7200 4200 7200 4000
-Wire Wire Line
-	7200 4000 6375 4000
 Connection ~ 7325 4200
 Wire Wire Line
 	7325 4200 7200 4200
@@ -100,10 +96,6 @@ Wire Wire Line
 	8450 3750 8775 3750
 Wire Wire Line
 	8450 3850 8775 3850
-Wire Wire Line
-	8450 3950 8775 3950
-Wire Wire Line
-	8450 4050 8775 4050
 Wire Wire Line
 	8775 3550 8450 3550
 Wire Wire Line
@@ -186,10 +178,6 @@ Entry Wire Line
 	8350 3650 8450 3750
 Entry Wire Line
 	8350 3750 8450 3850
-Entry Wire Line
-	8350 3850 8450 3950
-Entry Wire Line
-	8350 3950 8450 4050
 Wire Bus Line
 	8350 6350 5325 6350
 Wire Wire Line
@@ -317,10 +305,10 @@ Connection ~ 5475 4400
 Wire Wire Line
 	5475 4400 5475 4300
 $Comp
-L LeadedSolder:PLCCZ80 U2
+L LeadedSolder:PLCCZ80 U10
 U 1 1 5E823D20
 P 9275 2350
-F 0 "U2" H 9275 2465 50  0000 C CNN
+F 0 "U10" H 9275 2465 50  0000 C CNN
 F 1 "PLCCZ80" H 9275 2374 50  0000 C CNN
 F 2 "Package_LCC:PLCC-44_THT-Socket" H 9275 2350 50  0001 C CNN
 F 3 "http://www.zilog.com/docs/z80/ps0178.pdf" H 9275 2350 50  0001 C CNN
@@ -1083,14 +1071,6 @@ Wire Notes Line
 	4025 5700 4025 4350
 Wire Notes Line
 	4025 4350 3475 4350
-Wire Bus Line
-	10075 2000 10075 3350
-Wire Bus Line
-	6625 2000 6625 3800
-Wire Bus Line
-	5325 2900 5325 6350
-Wire Bus Line
-	8350 2450 8350 6350
 $Comp
 L 74xx:74LS32 U16
 U 5 1 6237D9C3
@@ -1158,4 +1138,44 @@ F 3 "" H 1875 6400 50  0001 C CNN
 	1    1875 6400
 	1    0    0    -1  
 $EndComp
+$Comp
+L AS6C62256:AS6C62256-DIP U11
+U 1 1 6238883D
+P 6500 3075
+F 0 "U11" H 6500 3280 50  0000 C CNN
+F 1 "AS6C62256-DIP" H 6500 3189 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6500 3075 50  0001 C CNN
+F 3 "" H 6500 3075 50  0001 C CNN
+F 4 "1450-1033-ND" H 6500 3098 50  0000 C CNN "DigiKey"
+	1    6500 3075
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 1775 0    50   ~ 0
+TODO: Convert pinout to the DIP format (SMD is obsolete)
+Connection ~ 6975 4000
+Connection ~ 6975 3900
+Wire Wire Line
+	6975 4000 6375 4000
+Wire Wire Line
+	7200 4000 6975 4000
+Wire Wire Line
+	6975 3900 7325 3900
+Wire Wire Line
+	6375 3900 6975 3900
+Wire Bus Line
+	10075 2000 10075 3350
+Wire Bus Line
+	5325 2900 5325 6350
+Wire Bus Line
+	6625 2000 6625 3800
+Wire Wire Line
+	8450 4050 8775 4050
+Wire Wire Line
+	8450 3950 8775 3950
+Entry Wire Line
+	8350 3950 8450 4050
+Entry Wire Line
+	8350 3850 8450 3950
+Wire Bus Line
+	8350 2450 8350 6350
 $EndSCHEMATC
