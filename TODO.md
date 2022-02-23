@@ -8,6 +8,6 @@
 - [x] populate all the z80 pins with labels
 - [x] double check NMI transistor pinout, use a PNP i already stock (3906?)
 - [x] copy digikey pn from leako for 6mm push button
-- [ ] what size of resistor should i use? looks like i started out with 0805 again for capacitors
+- [x] what size of resistor should i use? looks like i started out with 0805 again for capacitors, i guess we're doing 0805 again here
 - [ ] confirm the weirdness with /WR or WR for /WE on 76489
 - [x] finish switching to the cypress THT 62256 since i already have some?
