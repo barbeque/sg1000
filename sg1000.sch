@@ -424,12 +424,348 @@ Text Label 9850 3150 0    50   ~ 0
 D6
 Text Label 9850 3250 0    50   ~ 0
 D7
-Wire Bus Line
-	5325 2900 5325 6350
-Wire Bus Line
-	6625 2000 6625 3800
+Text Label 10075 3600 0    50   ~ 0
+~NMI
+Wire Wire Line
+	10075 3600 9775 3600
+Text Label 10100 4600 0    50   ~ 0
+~M1
+Wire Wire Line
+	10100 4600 9775 4600
+NoConn ~ 9775 4200
+$Comp
+L power:+5V #PWR?
+U 1 1 62164EAA
+P 10775 4225
+F 0 "#PWR?" H 10775 4075 50  0001 C CNN
+F 1 "+5V" H 10790 4398 50  0000 C CNN
+F 2 "" H 10775 4225 50  0001 C CNN
+F 3 "" H 10775 4225 50  0001 C CNN
+	1    10775 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10775 4225 10775 4400
+Wire Wire Line
+	10775 4400 9775 4400
+Text Label 10075 3800 0    50   ~ 0
+~MERQ
+Wire Wire Line
+	10075 3800 9775 3800
+Text Label 10100 4300 0    50   ~ 0
+~WAIT
+Wire Wire Line
+	10100 4300 9775 4300
+Text Notes 8250 5125 1    50   ~ 0
+On Enri schematics, ~WAIT~ is connected to ~HALT~ which is wrong I think
+Text Label 10100 4700 0    50   ~ 0
+~RFSH
+Wire Wire Line
+	10100 4700 9775 4700
+Text Label 10075 3500 0    50   ~ 0
+~INT
+Wire Wire Line
+	10075 3500 9775 3500
+Text Label 9775 3400 0    50   ~ 0
+CLK
+Text Label 10075 3900 0    50   ~ 0
+~IORQ
+Text Label 6525 4300 0    50   ~ 0
+~RD
+Wire Wire Line
+	6525 4300 6375 4300
+Text Label 6525 4200 0    50   ~ 0
+~WR
+Wire Wire Line
+	6525 4200 6375 4200
+Text Label 6525 4575 0    50   ~ 0
+~DSRAM
+Text Label 6525 4725 0    50   ~ 0
+~CS_WRAM
+Wire Wire Line
+	6525 4725 6425 4725
+Wire Wire Line
+	6425 4725 6425 4575
+Wire Wire Line
+	6425 4400 6375 4400
+Wire Wire Line
+	6525 4575 6425 4575
+Connection ~ 6425 4575
+Wire Wire Line
+	6425 4575 6425 4400
+Wire Wire Line
+	10075 3900 9775 3900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 621835E6
+P 10500 3700
+F 0 "TP?" H 10558 3818 50  0000 L CNN
+F 1 "TestPoint" H 10558 3727 50  0000 L CNN
+F 2 "" H 10700 3700 50  0001 C CNN
+F 3 "~" H 10700 3700 50  0001 C CNN
+	1    10500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3700 9775 3700
+Text Label 10075 3700 0    50   ~ 0
+~HALT
+Text Label 10075 4000 0    50   ~ 0
+~RD
+Text Label 10075 4100 0    50   ~ 0
+~WR
+Wire Wire Line
+	10075 4100 9775 4100
+Wire Wire Line
+	10075 4000 9775 4000
+Text Label 9175 5725 2    50   ~ 0
+~RESET
+Wire Wire Line
+	9775 4500 10775 4500
+Wire Wire Line
+	10775 4500 10775 5450
+Wire Wire Line
+	10775 5725 10025 5725
+$Comp
+L Device:CP_Small C6
+U 1 1 621901D0
+P 10025 5825
+F 0 "C6" H 10113 5871 50  0000 L CNN
+F 1 "10µF" H 10113 5780 50  0000 L CNN
+F 2 "" H 10025 5825 50  0001 C CNN
+F 3 "~" H 10025 5825 50  0001 C CNN
+	1    10025 5825
+	1    0    0    -1  
+$EndComp
+Connection ~ 10025 5725
+Wire Wire Line
+	10025 5725 9175 5725
+$Comp
+L power:GND #PWR?
+U 1 1 62190B3A
+P 10025 5925
+F 0 "#PWR?" H 10025 5675 50  0001 C CNN
+F 1 "GND" H 10030 5752 50  0000 C CNN
+F 2 "" H 10025 5925 50  0001 C CNN
+F 3 "" H 10025 5925 50  0001 C CNN
+	1    10025 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 6219147B
+P 10250 5450
+F 0 "R3" V 10045 5450 50  0000 C CNN
+F 1 "47kΩ" V 10136 5450 50  0000 C CNN
+F 2 "" H 10250 5450 50  0001 C CNN
+F 3 "~" H 10250 5450 50  0001 C CNN
+	1    10250 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10350 5450 10775 5450
+Connection ~ 10775 5450
+Wire Wire Line
+	10775 5450 10775 5725
+$Comp
+L Device:R_Small_US R4
+U 1 1 62194E28
+P 9850 5450
+F 0 "R4" V 9645 5450 50  0000 C CNN
+F 1 "100Ω" V 9736 5450 50  0000 C CNN
+F 2 "" H 9850 5450 50  0001 C CNN
+F 3 "~" H 9850 5450 50  0001 C CNN
+	1    9850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 6219586D
+P 9850 5150
+F 0 "D1" H 9850 5366 50  0000 C CNN
+F 1 "D" H 9850 5275 50  0000 C CNN
+F 2 "" H 9850 5150 50  0001 C CNN
+F 3 "~" H 9850 5150 50  0001 C CNN
+	1    9850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 5450 10050 5450
+Wire Wire Line
+	10000 5150 10050 5150
+Wire Wire Line
+	10050 5150 10050 5450
+Connection ~ 10050 5450
+Wire Wire Line
+	10050 5450 9950 5450
+Wire Wire Line
+	9700 5150 9625 5150
+Wire Wire Line
+	9625 5150 9625 5450
+Wire Wire Line
+	9625 5450 9750 5450
+$Comp
+L power:+5V #PWR?
+U 1 1 621A0AE5
+P 9625 5075
+F 0 "#PWR?" H 9625 4925 50  0001 C CNN
+F 1 "+5V" H 9640 5248 50  0000 C CNN
+F 2 "" H 9625 5075 50  0001 C CNN
+F 3 "" H 9625 5075 50  0001 C CNN
+	1    9625 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9625 5075 9625 5150
+Connection ~ 9625 5150
+Text Label 4825 6500 0    50   ~ 0
+~NMI
+$Comp
+L Device:Q_PNP_ECB Q1C
+U 1 1 621A544C
+P 4325 6400
+F 0 "Q1C" V 4560 6400 50  0000 C CNN
+F 1 "A733" V 4651 6400 50  0000 C CNN
+F 2 "" H 4525 6500 50  0001 C CNN
+F 3 "~" H 4325 6400 50  0001 C CNN
+	1    4325 6400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4525 6500 4725 6500
+$Comp
+L Device:R_Small_US R13
+U 1 1 621AA093
+P 3750 6500
+F 0 "R13" V 3545 6500 50  0000 C CNN
+F 1 "330µF" V 3636 6500 50  0000 C CNN
+F 2 "" H 3750 6500 50  0001 C CNN
+F 3 "~" H 3750 6500 50  0001 C CNN
+	1    3750 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 6500 4125 6500
+$Comp
+L power:+5V #PWR?
+U 1 1 621AE1BC
+P 3375 6300
+F 0 "#PWR?" H 3375 6150 50  0001 C CNN
+F 1 "+5V" H 3390 6473 50  0000 C CNN
+F 2 "" H 3375 6300 50  0001 C CNN
+F 3 "" H 3375 6300 50  0001 C CNN
+	1    3375 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 6300 3375 6500
+Wire Wire Line
+	3375 6500 3650 6500
+Text Label 4325 6075 0    50   ~ 0
+~CS_PSG
+Wire Wire Line
+	4325 6075 4325 6200
+$Comp
+L Device:R_Small_US R12
+U 1 1 621B6738
+P 4125 6275
+F 0 "R12" H 4058 6229 50  0000 R CNN
+F 1 "1kΩ" H 4058 6320 50  0000 R CNN
+F 2 "" H 4125 6275 50  0001 C CNN
+F 3 "~" H 4125 6275 50  0001 C CNN
+	1    4125 6275
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4125 6375 4125 6500
+Connection ~ 4125 6500
+Text Label 4125 6025 0    50   ~ 0
+~M1
+Wire Wire Line
+	4125 6025 4125 6175
+$Comp
+L Device:R_Small_US R6
+U 1 1 621C4563
+P 4550 7175
+F 0 "R6" V 4345 7175 50  0000 C CNN
+F 1 "100µF" V 4436 7175 50  0000 C CNN
+F 2 "" H 4550 7175 50  0001 C CNN
+F 3 "~" H 4550 7175 50  0001 C CNN
+	1    4550 7175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 7175 4725 7175
+Wire Wire Line
+	4725 7175 4725 6500
+Connection ~ 4725 6500
+Wire Wire Line
+	4725 6500 4825 6500
+$Comp
+L Device:R_Small_US R5
+U 1 1 621C92DE
+P 3700 7000
+F 0 "R5" H 3768 7046 50  0000 L CNN
+F 1 "47kΩ" H 3768 6955 50  0000 L CNN
+F 2 "" H 3700 7000 50  0001 C CNN
+F 3 "~" H 3700 7000 50  0001 C CNN
+	1    3700 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7175 3700 7175
+Wire Wire Line
+	3700 7175 3700 7100
+$Comp
+L power:+5V #PWR?
+U 1 1 621CEDA0
+P 3700 6850
+F 0 "#PWR?" H 3700 6700 50  0001 C CNN
+F 1 "+5V" H 3715 7023 50  0000 C CNN
+F 2 "" H 3700 6850 50  0001 C CNN
+F 3 "" H 3700 6850 50  0001 C CNN
+	1    3700 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6850 3700 6900
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 621D41F0
+P 3275 7175
+F 0 "SW?" H 3275 7410 50  0000 C CNN
+F 1 "Pause Key" H 3275 7319 50  0000 C CNN
+F 2 "" H 3275 7175 50  0001 C CNN
+F 3 "~" H 3275 7175 50  0001 C CNN
+	1    3275 7175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 7175 3700 7175
+Connection ~ 3700 7175
+$Comp
+L power:GND #PWR?
+U 1 1 621D98B1
+P 2850 7400
+F 0 "#PWR?" H 2850 7150 50  0001 C CNN
+F 1 "GND" H 2855 7227 50  0000 C CNN
+F 2 "" H 2850 7400 50  0001 C CNN
+F 3 "" H 2850 7400 50  0001 C CNN
+	1    2850 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7400 2850 7175
+Wire Wire Line
+	2850 7175 3075 7175
 Wire Bus Line
 	10075 2000 10075 3350
 Wire Bus Line
+	6625 2000 6625 3800
+Wire Bus Line
+	5325 2900 5325 6350
+Wire Bus Line
 	8350 2450 8350 6350
+Text Notes 5750 4875 0    50   ~ 0
+No ~CS2~ on this RAM, so no jumpers
 $EndSCHEMATC
