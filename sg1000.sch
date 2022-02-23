@@ -723,8 +723,9 @@ U 1 1 621D41F0
 P 3275 7175
 F 0 "SW?" H 3275 7410 50  0000 C CNN
 F 1 "Pause Key" H 3275 7319 50  0000 C CNN
-F 2 "" H 3275 7175 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3275 7175 50  0001 C CNN
 F 3 "~" H 3275 7175 50  0001 C CNN
+F 4 "679-2428-ND" H 3275 7175 50  0001 C CNN "DigiKey"
 	1    3275 7175
 	1    0    0    -1  
 $EndComp
@@ -746,14 +747,6 @@ Wire Wire Line
 	2850 7400 2850 7175
 Wire Wire Line
 	2850 7175 3075 7175
-Wire Bus Line
-	10075 2000 10075 3350
-Wire Bus Line
-	6625 2000 6625 3800
-Wire Bus Line
-	5325 2900 5325 6350
-Wire Bus Line
-	8350 2450 8350 6350
 Text Notes 5750 4875 0    50   ~ 0
 No ~CS2~ on this RAM, so no jumpers
 $Comp
@@ -769,4 +762,107 @@ F 4 "641-1946-ND" V 4325 6400 50  0001 C CNN "DigiKey"
 	0    -1   1    0   
 $EndComp
 Connection ~ 4125 6500
+$Comp
+L LeakoChips:SN76489AN U?
+U 1 1 621E0F86
+P 1725 1525
+F 0 "U?" H 1725 2100 50  0000 C CNN
+F 1 "SN76489AN" H 1725 2009 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 1725 2075 50  0001 C CNN
+F 3 "" H 1725 2075 50  0001 C CNN
+	1    1725 1525
+	1    0    0    -1  
+$EndComp
+Text Label 2400 1775 0    50   ~ 0
+D0
+Wire Wire Line
+	2400 1775 2175 1775
+Text Label 2400 1675 0    50   ~ 0
+D1
+Wire Wire Line
+	2400 1675 2175 1675
+Text Label 2400 1575 0    50   ~ 0
+D2
+Wire Wire Line
+	2400 1575 2175 1575
+Text Label 2400 1475 0    50   ~ 0
+D3
+Wire Wire Line
+	2400 1475 2175 1475
+Text Label 2400 1275 0    50   ~ 0
+D4
+Wire Wire Line
+	2400 1275 2175 1275
+Text Label 975  1175 2    50   ~ 0
+D5
+Wire Wire Line
+	975  1175 1275 1175
+Text Label 975  1275 2    50   ~ 0
+D6
+Wire Wire Line
+	975  1275 1275 1275
+Text Label 975  1375 2    50   ~ 0
+D7
+Wire Wire Line
+	975  1375 1275 1375
+Text Label 975  1775 2    50   ~ 0
+Audio_Out
+Wire Wire Line
+	975  1775 1275 1775
+$Comp
+L power:GND #PWR?
+U 1 1 6221427D
+P 1025 2025
+F 0 "#PWR?" H 1025 1775 50  0001 C CNN
+F 1 "GND" H 1030 1852 50  0000 C CNN
+F 2 "" H 1025 2025 50  0001 C CNN
+F 3 "" H 1025 2025 50  0001 C CNN
+	1    1025 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 2025 1025 1875
+Wire Wire Line
+	1025 1875 1275 1875
+$Comp
+L power:+5V #PWR?
+U 1 1 6221AAAF
+P 2425 900
+F 0 "#PWR?" H 2425 750 50  0001 C CNN
+F 1 "+5V" H 2440 1073 50  0000 C CNN
+F 2 "" H 2425 900 50  0001 C CNN
+F 3 "" H 2425 900 50  0001 C CNN
+	1    2425 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2425 900  2425 1175
+Wire Wire Line
+	2425 1175 2175 1175
+Text Label 975  1475 2    50   ~ 0
+~WAIT
+Wire Wire Line
+	975  1475 1275 1475
+Text Label 975  1575 2    50   ~ 0
+~WR
+Wire Wire Line
+	975  1575 1275 1575
+Text Notes 675  2375 0    50   ~ 0
+Enri schematics connect WR (not ~WR~) to ~WE~. I think this is another error.
+Text Label 975  1675 2    50   ~ 0
+~CS_PSG
+Wire Wire Line
+	975  1675 1275 1675
+Text Label 2400 1375 0    50   ~ 0
+CLK
+Wire Wire Line
+	2400 1375 2175 1375
+Wire Bus Line
+	10075 2000 10075 3350
+Wire Bus Line
+	6625 2000 6625 3800
+Wire Bus Line
+	5325 2900 5325 6350
+Wire Bus Line
+	8350 2450 8350 6350
 $EndSCHEMATC

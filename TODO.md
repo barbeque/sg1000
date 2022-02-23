@@ -1,4 +1,4 @@
-- [ ] export SN76489 symbol from leako, and import it into here and the global lib storage
+- [x] export SN76489 symbol from leako, and import it into here and the global lib storage
 - [ ] add the address, I/O decoders
 - [x] check the write pin on the RAM
 - [ ] add the TMS9918 and the DRAM-SRAM intercept flipflops
@@ -7,3 +7,7 @@
 - [ ] will the power transistor setup from leako work?
 - [x] populate all the z80 pins with labels
 - [x] double check NMI transistor pinout, use a PNP i already stock (3906?)
+- [x] copy digikey pn from leako for 6mm push button
+- [ ] what size of resistor should i use? looks like i started out with 0805 again for capacitors
+- [ ] confirm the weirdness with /WR or WR for /WE on 76489
+- [ ] switch to the cypress THT 62256 since i already have some?
