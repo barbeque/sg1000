@@ -1,7 +1,8 @@
 - [x] export SN76489 symbol from leako, and import it into here and the global lib storage
 - [x] add the address, I/O decoders
 - [x] check the write pin on the RAM
-- [ ] add the TMS9918 and the DRAM-SRAM intercept flipflops
+- [x] add the TMS9918
+- [ ] ...and the DRAM-SRAM intercept flipflops
 - [ ] make a symbol for the cart slot
 - [ ] make a footprint for the cart slot part
 - [ ] will the power transistor setup from leako work?
