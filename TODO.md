@@ -12,3 +12,6 @@
 - [x] what size of resistor should i use? looks like i started out with 0805 again for capacitors, i guess we're doing 0805 again here
 - [ ] confirm the weirdness with /WR or WR for /WE on 76489
 - [x] finish switching to the cypress THT 62256 since i already have some?
+- [ ] copy video and audio output circuits from leako
+- [ ] double check the decoder weave for the controllers
+- [ ] find 74ls257
