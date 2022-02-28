@@ -3,7 +3,7 @@
 - [x] check the write pin on the RAM
 - [x] add the TMS9918
 - [ ] ...and the DRAM-SRAM intercept flipflops
-- [ ] make a symbol for the cart slot
+- [x] make a symbol for the cart slot
 - [ ] make a footprint for the cart slot part
 - [ ] will the power transistor setup from leako work?
 - [x] populate all the z80 pins with labels
