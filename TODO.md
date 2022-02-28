@@ -14,4 +14,6 @@
 - [x] finish switching to the cypress THT 62256 since i already have some?
 - [ ] copy video and audio output circuits from leako
 - [ ] double check the decoder weave for the controllers
-- [ ] find 74ls257
+- [x] find 74ls257
+- [ ] usb power input (with power flags)
+- [ ] power switch
