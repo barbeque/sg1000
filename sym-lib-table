@@ -1,5 +1,6 @@
 (sym_lib_table
-  (lib (name LeadedSolder)(type Legacy)(uri ${KIPRJMOD}/LeadedSolder.lib)(options "")(descr ""))
-  (lib (name LeakoChips)(type Legacy)(uri ${KIPRJMOD}/LeakoChips.lib)(options "")(descr ""))
-  (lib (name AS6C62256)(type Legacy)(uri ${KIPRJMOD}/AS6C62256.lib)(options "")(descr ""))
+  (lib (name "LeadedSolder")(type "Legacy")(uri "${KIPRJMOD}/LeadedSolder.lib")(options "")(descr ""))
+  (lib (name "LeakoChips")(type "Legacy")(uri "${KIPRJMOD}/LeakoChips.lib")(options "")(descr ""))
+  (lib (name "AS6C62256")(type "Legacy")(uri "${KIPRJMOD}/AS6C62256.lib")(options "")(descr ""))
+  (lib (name "USB-B1HSB6")(type "Legacy")(uri "${KIPRJMOD}/USB-B1HSB6/USB-B1HSB6.lib")(options "")(descr ""))
 )

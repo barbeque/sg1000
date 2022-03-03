@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name LeadedSolder)(type KiCad)(uri ${KIPRJMOD}/LeadedSolder.pretty)(options "")(descr ""))
+  (lib (name "LeadedSolder")(type "KiCad")(uri "${KIPRJMOD}/LeadedSolder.pretty")(options "")(descr ""))
+  (lib (name "USB-B1HSB6")(type "KiCad")(uri "${KIPRJMOD}/USB-B1HSB6")(options "")(descr ""))
+  (lib (name "LeakyChips")(type "KiCad")(uri "${KIPRJMOD}/LeakyChips.pretty")(options "")(descr ""))
 )
