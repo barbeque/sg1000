@@ -379,6 +379,8 @@
         "name": "Power",
         "nets": [
           "+5V",
+          "/Fused_Power",
+          "/USB_Power",
           "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
