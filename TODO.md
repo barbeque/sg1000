@@ -2,18 +2,21 @@
 - [x] add the address, I/O decoders
 - [x] check the write pin on the RAM
 - [x] add the TMS9918
-- [ ] ...and the DRAM-SRAM intercept flipflops
+- [x] ...and the DRAM-SRAM intercept flipflops
 - [x] make a symbol for the cart slot
-- [ ] make a footprint for the cart slot part
-- [ ] will the power transistor setup from leako work?
+- [x] make a footprint for the cart slot part
+- [x] will the power transistor setup from leako work?
 - [x] populate all the z80 pins with labels
 - [x] double check NMI transistor pinout, use a PNP i already stock (3906?)
 - [x] copy digikey pn from leako for 6mm push button
 - [x] what size of resistor should i use? looks like i started out with 0805 again for capacitors, i guess we're doing 0805 again here
 - [ ] confirm the weirdness with /WR or WR for /WE on 76489
 - [x] finish switching to the cypress THT 62256 since i already have some?
-- [ ] copy video and audio output circuits from leako
+- [x] copy video and audio output circuits from leako
 - [ ] double check the decoder weave for the controllers
 - [x] find 74ls257
-- [ ] usb power input (with power flags)
-- [ ] power switch
+- [x] usb power input (with power flags)
+- [x] power switch
+- [x] add a spare footprint for an emergency inverter
+- [ ] print and check cartridge interference once parts arranged
+- [ ] stuff all this into a board and route it
