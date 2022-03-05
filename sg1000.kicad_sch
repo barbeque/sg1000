@@ -9585,7 +9585,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 132.08 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid abb8dd2a-03fb-4e18-ac16-ae57c97f0ae6)
-    (property "Reference" "JP?" (id 0) (at 132.08 101.6 0))
+    (property "Reference" "JP3" (id 0) (at 132.08 101.6 0))
     (property "Value" "Jumper_2_Bridged" (id 1) (at 132.08 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -10211,7 +10211,7 @@
       (reference "JP2") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
     )
     (path "/abb8dd2a-03fb-4e18-ac16-ae57c97f0ae6"
-      (reference "JP?") (unit 1) (value "Jumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
+      (reference "JP3") (unit 1) (value "Jumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm")
     )
     (path "/e8ff5aa1-c73d-405b-ae17-444be3e4dae0"
       (reference "Q1") (unit 1) (value "2n4401") (footprint "Package_TO_SOT_THT:TO-92_Inline_Wide")
