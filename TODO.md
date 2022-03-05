@@ -18,5 +18,7 @@
 - [x] usb power input (with power flags)
 - [x] power switch
 - [x] add a spare footprint for an emergency inverter
+- [x] cart slot is actually 0.125"
 - [ ] print and check cartridge interference once parts arranged
 - [ ] stuff all this into a board and route it
+- [ ] keyboard port? what's it even look like
