@@ -22,3 +22,5 @@
 - [ ] print and check cartridge interference once parts arranged
 - [ ] stuff all this into a board and route it
 - [ ] keyboard port? what's it even look like
+- [ ] maybe do the flange and mounting holes on the cart slot after all
+- [ ] make a decision on 150x150 - it's only 78 cents more per board and i don't think anyone cares
