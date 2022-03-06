@@ -3,4 +3,5 @@
   (lib (name "USB-B1HSB6")(type "KiCad")(uri "${KIPRJMOD}/USB-B1HSB6")(options "")(descr ""))
   (lib (name "LeakyChips")(type "KiCad")(uri "${KIPRJMOD}/LeakyChips.pretty")(options "")(descr ""))
   (lib (name "Jacks")(type "KiCad")(uri "${KIPRJMOD}/Jacks.pretty")(options "")(descr ""))
+  (lib (name "Logos")(type "KiCad")(uri "${KIPRJMOD}/Logos.pretty")(options "")(descr ""))
 )
