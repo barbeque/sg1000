@@ -24,4 +24,6 @@
 - [ ] keyboard port? what's it even look like
 - [ ] maybe do the flange and mounting holes on the cart slot after all
 - [X] make a decision on 150x150 - it's only 78 cents more per board and i don't think anyone cares
-- [ ] make room for mounting holes
+- [x] make room for mounting holes
+- [ ] either find a new cartridge slot or make sure parts aren't hitting the mounting holes - YES - EDAC 396-044-520-201
+

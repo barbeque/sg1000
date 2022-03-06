@@ -9807,7 +9807,7 @@
     (property "Datasheet" "" (id 3) (at 49.53 533.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "A31717-ND" (id 4) (at 53.34 533.4 0)
+    (property "DigiKey" "151-1435-ND " (id 4) (at 53.34 533.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid a196ebc3-e962-4cb4-8f2e-5187f7740e85))
