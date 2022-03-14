@@ -20,10 +20,10 @@
 - [x] add a spare footprint for an emergency inverter
 - [x] cart slot is actually 0.125"
 - [x] print and check cartridge interference once parts arranged
-- [ ] stuff all this into a board and route it
-- [ ] keyboard port? what's it even look like
+- [x] stuff all this into a board and route it
+- [x] keyboard port? what's it even look like
 - [ ] maybe do the flange and mounting holes on the cart slot after all
 - [X] make a decision on 150x150 - it's only 78 cents more per board and i don't think anyone cares
 - [x] make room for mounting holes
-- [ ] either find a new cartridge slot or make sure parts aren't hitting the mounting holes - YES - EDAC 396-044-520-201
+- [x] either find a new cartridge slot or make sure parts aren't hitting the mounting holes - YES - EDAC 396-044-520-201
 
