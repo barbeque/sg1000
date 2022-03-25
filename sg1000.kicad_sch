@@ -6761,7 +6761,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 39f2c104-04a0-4192-b0be-0e568db7f2ec)
   )
-  (label "~{KB_SEL}" (at 111.125 147.32 0)
+  (label "~{KBSEL}" (at 111.125 147.32 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3a41dd27-ec14-44d5-b505-aad1d829f79a)
   )
