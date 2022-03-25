@@ -241,7 +241,7 @@
         (name "D0" (effects (font (size 1.27 1.27))))
         (number "3" (effects (font (size 1.27 1.27))))
       )
-      (pin input line (at -11.43 1.27 0) (length 5.08)
+      (pin output line (at -11.43 1.27 0) (length 5.08)
         (name "READY" (effects (font (size 1.27 1.27))))
         (number "4" (effects (font (size 1.27 1.27))))
       )

@@ -2,6 +2,6 @@
   (lib (name "LeadedSolder")(type "KiCad")(uri "${KIPRJMOD}/LeadedSolder.kicad_sym")(options "")(descr ""))
   (lib (name "LeakoChips")(type "KiCad")(uri "${KIPRJMOD}/LeakoChips.kicad_sym")(options "")(descr ""))
   (lib (name "AS6C62256")(type "Legacy")(uri "${KIPRJMOD}/AS6C62256.lib")(options "")(descr ""))
-  (lib (name "USB-B1HSB6")(type "Legacy")(uri "${KIPRJMOD}/USB-B1HSB6/USB-B1HSB6.lib")(options "")(descr ""))
+  (lib (name "USB-B1HSB6")(type "KiCad")(uri "${KIPRJMOD}/USB-B1HSB6-2.kicad_sym")(options "")(descr ""))
   (lib (name "RCJ-017")(type "Legacy")(uri "${KIPRJMOD}/RCJ-017.lib")(options "")(descr ""))
 )
