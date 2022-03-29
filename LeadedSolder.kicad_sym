@@ -658,7 +658,7 @@
         (number "B18" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at -10.16 -29.21 0) (length 2.54)
-        (name "A15" (effects (font (size 1.27 1.27))))
+        (name "~{EXM2}" (effects (font (size 1.27 1.27))))
         (number "B19" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at 12.7 8.89 180) (length 2.54)
