@@ -9105,7 +9105,7 @@
   (symbol (lib_id "power:+5V") (at 269.24 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0a20b75b-97a9-4d7d-916b-83aaa5ab9c7a)
-    (property "Reference" "#PWR?" (id 0) (at 269.24 49.53 0)
+    (property "Reference" "#PWR0161" (id 0) (at 269.24 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 269.24 40.64 0))
@@ -9156,7 +9156,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 281.94 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1a22ebbe-8c05-4bf6-a7fd-61022280bc96)
-    (property "Reference" "R?" (id 0) (at 284.48 54.6099 0)
+    (property "Reference" "R17" (id 0) (at 284.48 54.6099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10kΩ" (id 1) (at 284.48 57.1499 0)
@@ -9502,7 +9502,7 @@
   (symbol (lib_id "power:+5V") (at 281.94 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5646e3ec-0d45-47c1-830b-1c531076fe16)
-    (property "Reference" "#PWR?" (id 0) (at 281.94 54.61 0)
+    (property "Reference" "#PWR0162" (id 0) (at 281.94 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 281.94 45.72 0))
@@ -9534,7 +9534,7 @@
   (symbol (lib_id "Device:R_Small_US") (at 269.24 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 60d26c79-e53a-4d3e-af15-3d83ab60ac67)
-    (property "Reference" "R?" (id 0) (at 271.78 49.5299 0)
+    (property "Reference" "R16" (id 0) (at 271.78 49.5299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10kΩ" (id 1) (at 271.78 52.0699 0)
@@ -10620,10 +10620,10 @@
       (reference "#PWR0160") (unit 1) (value "GNDPWR") (footprint "")
     )
     (path "/0a20b75b-97a9-4d7d-916b-83aaa5ab9c7a"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0161") (unit 1) (value "+5V") (footprint "")
     )
     (path "/5646e3ec-0d45-47c1-830b-1c531076fe16"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0162") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005e7d9a30"
       (reference "C1") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
@@ -10739,6 +10739,12 @@
     (path "/00000000-0000-0000-0000-0000623635dc"
       (reference "R15") (unit 1) (value "330Ω") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
+    (path "/60d26c79-e53a-4d3e-af15-3d83ab60ac67"
+      (reference "R16") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/1a22ebbe-8c05-4bf6-a7fd-61022280bc96"
+      (reference "R17") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-000062386571"
       (reference "R31") (unit 1) (value "2.2kΩ") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
@@ -10747,12 +10753,6 @@
     )
     (path "/00000000-0000-0000-0000-000062362901"
       (reference "R600") (unit 1) (value "330Ω") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
-    )
-    (path "/1a22ebbe-8c05-4bf6-a7fd-61022280bc96"
-      (reference "R?") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-    )
-    (path "/60d26c79-e53a-4d3e-af15-3d83ab60ac67"
-      (reference "R?") (unit 1) (value "10kΩ") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00006251b371"
       (reference "RN1") (unit 1) (value "4.7kΩ") (footprint "Resistor_THT:R_Array_SIP7")
