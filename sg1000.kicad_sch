@@ -6437,8 +6437,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 706c1cb9-5d96-4282-9efc-6147f0125147)
   )
-  (text "On Enri schematics, ~{WAIT} is connected to ~{HALT} which is wrong I think"
-    (at 209.55 130.175 90)
+  (text "On Enri schematics, ~{WAIT} is connected to ~{HALT} which is wrong - ~{HALT} is an output"
+    (at 209.55 137.16 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 71f92193-19b0-44ed-bc7f-77535083d769)
   )
@@ -9942,7 +9942,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 264.16 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b71eafdc-9c03-445b-8de6-c72ccf90805a)
-    (property "Reference" "TP?" (id 0) (at 266.7 83.0579 0)
+    (property "Reference" "TP4" (id 0) (at 266.7 83.0579 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "~{NMI}" (id 1) (at 266.7 86.2329 0)
@@ -10665,7 +10665,7 @@
       (reference "TP3") (unit 1) (value "GND") (footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded")
     )
     (path "/b71eafdc-9c03-445b-8de6-c72ccf90805a"
-      (reference "TP?") (unit 1) (value "~{NMI}") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+      (reference "TP4") (unit 1) (value "~{NMI}") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
     )
     (path "/e4e9a9cd-894c-43a6-bbd2-9190e99d71d4"
       (reference "U1") (unit 1) (value "SG-1000-Cart") (footprint "LeadedSolder:SG1000_Cart")
