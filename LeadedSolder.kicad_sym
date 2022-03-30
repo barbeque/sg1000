@@ -682,7 +682,7 @@
         (number "B3" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at 12.7 3.81 180) (length 2.54)
-        (name "~{M8-B}" (effects (font (size 1.27 1.27))))
+        (name "~{EXM1}" (effects (font (size 1.27 1.27))))
         (number "B4" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at 12.7 1.27 180) (length 2.54)
