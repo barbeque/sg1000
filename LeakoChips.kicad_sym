@@ -250,7 +250,7 @@
         (number "5" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at -11.43 -3.81 0) (length 5.08)
-        (name "~{OE}" (effects (font (size 1.27 1.27))))
+        (name "~{CE}" (effects (font (size 1.27 1.27))))
         (number "6" (effects (font (size 1.27 1.27))))
       )
       (pin output line (at -11.43 -6.35 0) (length 5.08)

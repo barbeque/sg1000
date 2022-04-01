@@ -13,7 +13,7 @@
 - [ ] confirm the weirdness with /WR or WR for /WE on 76489
 - [x] finish switching to the cypress THT 62256 since i already have some?
 - [x] copy video and audio output circuits from leako
-- [ ] double check the decoder weave for the controllers
+- [x] double check the decoder weave for the controllers
 - [x] find 74ls257
 - [x] usb power input (with power flags)
 - [x] power switch
