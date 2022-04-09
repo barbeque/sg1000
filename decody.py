@@ -18,17 +18,12 @@ def walk_map(m):
         formatted_addresses = map(lambda a: f'A{a}', set_bits)
         print(' bits set:', ', '.join(formatted_addresses))
 
-
-
 memory_map = [
-    ( 0, 'bios rom' ),
-    ( 0x2000, 'expansion port' ),
-    ( 0x4000, 'expansion port' ),
-    ( 0x6000, 'start of RAM' ),
-    ( 0x4000, 'cart ROM bank A' ),
-    ( 0x6000, 'cart ROM bank B' ),
-    ( 0x8000, 'cart ROM bank C' ),
-    ( 0xa000, 'cart ROM bank D') ]
+    ( 0, '/EXM2 (cartridge)' ),
+    ( 0xc000, 'internal RAM' ),
+    ( 0xc400, 'extra internal RAM (SG-1000 II)' ),
+    ( 0x8000, '/EXM1' ),
+]
 """
 memory_map = [ # PV7
     (0x8000, 'slot 0-2, first 8k'),
