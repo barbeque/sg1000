@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SoggyCartridge")(type "KiCad")(uri "${KIPRJMOD}/SoggyCartridge.pretty")(options "")(descr ""))
+)

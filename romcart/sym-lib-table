@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "LeadedSolder")(type "KiCad")(uri "${KIPRJMOD}/../LeadedSolder.kicad_sym")(options "")(descr ""))
+)
