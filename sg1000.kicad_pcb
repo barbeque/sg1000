@@ -6506,7 +6506,7 @@
   (gr_text "a0" (at 136.779 134.112) (layer "B.SilkS") (tstamp a217641f-6ac9-4647-858b-c6f64fae88ef)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "~{KBSEL}" (at 80.391 164.338) (layer "B.SilkS") (tstamp b3638d09-701e-49d3-a967-433075a5eb27)
+  (gr_text "~{KBSEL}" (at 65.532 157.734) (layer "B.SilkS") (tstamp b3638d09-701e-49d3-a967-433075a5eb27)
     (effects (font (size 0.75 0.75) (thickness 0.15)) (justify mirror))
   )
   (gr_text "~{CS_RAM}" (at 65.786 161.925) (layer "B.SilkS") (tstamp b9d07980-880f-4752-b1d3-35479c7c4ba5)

@@ -29,3 +29,4 @@
 - [x] [SF-7000] look into the sf-7000 i/o range that fabiodl mentioned - "The sg-1000 does not allow connecting the SF-7000 because the joystick/SK1100 takes the IO range 0XC0-0XFF, while the SF-7000 requires the range 0xE0~0xFF."
 - [x] [SF-7000] defeat keyboard/joystick decode if a5 is high
 - [x] [SF-7000] synthesize /IOWR and /IORD and pass to cartridge
+- [x] wire at least 2k (SG-1000 II) of the 32k 62256
