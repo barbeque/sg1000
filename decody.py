@@ -20,8 +20,10 @@ def walk_map(m):
 
 memory_map = [
     ( 0, '/EXM2 (cartridge)' ),
-    ( 0xc000, 'internal RAM' ),
+    ( 0xc000, 'internal RAM (SG-1000)' ),
     ( 0xc400, 'extra internal RAM (SG-1000 II)' ),
+#    ( 0xdfff, 'end of fixed 8K' ),
+    ( 0xe000, 'second pageable 8K (Soggy-1000 v3+)' ),
     ( 0x8000, '/EXM1' ),
 ]
 """
