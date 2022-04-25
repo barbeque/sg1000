@@ -36,3 +36,4 @@
 - [x] [Memory Mapper] 74ls74 set
 - [x] [Memory Mapper] decode a read to upper 8k of RAM specially (trigger on a13 & /CS_WRAM maybe using a quad nand)
 - [x] [Memory Mapper] replace 74ls74 with a different latch that emits only during upper-8k read (7474 is not tristate) - picked 74ls373, see if something better comes along
+- [ ] [Memory Mapper] Dump all the knowledge we have about the memory map into decody to make sure we actually have a 16k window, and not 32k. If we have 32k, just get rid of the mapper.
