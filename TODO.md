@@ -35,4 +35,4 @@
 - [x] [Onboard ROM] decode EXM2 to onboard ROM if cartridge is not present
 - [x] [Memory Mapper] 74ls74 set
 - [x] [Memory Mapper] decode a read to upper 8k of RAM specially (trigger on a13 & /CS_WRAM maybe using a quad nand)
-- [ ] [Memory Mapper] replace 74ls74 with a different latch that emits only during upper-8k read (7474 is not tristate)
+- [x] [Memory Mapper] replace 74ls74 with a different latch that emits only during upper-8k read (7474 is not tristate) - picked 74ls373, see if something better comes along

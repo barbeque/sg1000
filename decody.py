@@ -37,6 +37,7 @@ memory_map = [ # PV7
 """
 
 io_map = [
+    ( 0x1f, 'memory mapper (canonical; all $00-3f is available)'),
     ( 0x40, 'psg sn76489' ),
     ( 0x80, 'video tms9918' ),
     ( 0xc0, 'keyboard + joystick' ),
