@@ -6,8 +6,7 @@ Soggy-1000 is an open-source clone of the Sega SG-1000 home videogame system. Th
 The Soggy is basically identical to the existing SG-1000, with the addition (in v0.3 and onwards) of memory mapping hardware. This hardware allows programmers to take advantage of the full 32k of main RAM on the system.
 
 TODO: Memory map diagram
-TODO: Use IOW + $1f to set it
-TODO: Do we actually only have a 16k window, or full 32k? Is anything ABOVE us in memory
+TODO: Use IOW + $10 to set it
 
 ## Version History
 # v0.3 (in development)
