@@ -10,7 +10,7 @@
 - [x] double check NMI transistor pinout, use a PNP i already stock (3906?)
 - [x] copy digikey pn from leako for 6mm push button
 - [x] what size of resistor should i use? looks like i started out with 0805 again for capacitors, i guess we're doing 0805 again here
-- [ ] confirm the weirdness with /WR or WR for /WE on 76489
+- [x] confirm the weirdness with /WR or WR for /WE on 76489
 - [x] finish switching to the cypress THT 62256 since i already have some?
 - [x] copy video and audio output circuits from leako
 - [x] double check the decoder weave for the controllers
@@ -30,3 +30,11 @@
 - [x] [SF-7000] defeat keyboard/joystick decode if a5 is high
 - [x] [SF-7000] synthesize /IOWR and /IORD and pass to cartridge
 - [x] wire at least 2k (SG-1000 II) of the 32k 62256
+- [x] [Onboard ROM] wire up onboard DIP ROM
+- [x] [Onboard ROM] detect non-presence of cartridge
+- [x] [Onboard ROM] decode EXM2 to onboard ROM if cartridge is not present
+- [x] [Memory Mapper] 74ls74 set
+- [x] [Memory Mapper] decode a read to upper 8k of RAM specially (trigger on a13 & /CS_WRAM maybe using a quad nand)
+- [x] [Memory Mapper] replace 74ls74 with a different latch that emits only during upper-8k read (7474 is not tristate) - picked 74ls373, see if something better comes along
+- [x] [Memory Mapper] Dump all the knowledge we have about the memory map into decody to make sure we actually have a 16k window, and not 32k. If we have 32k, just get rid of the mapper.
+- [ ] [Memory Mapper] does it make sense to use a '573 instead of a '373? Might be easier to route and find
