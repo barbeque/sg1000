@@ -8,6 +8,12 @@ The Soggy is basically identical to the existing SG-1000, with the addition (in 
 TODO: Memory map diagram
 TODO: Use IOW + $10 to set it
 
+## Special Thanks
+The following people helped me figure out some aspect of the SG-1000, fixed a bug in my hardware, or otherwise contributed.
+
+ * Fabio Dalla Libera (sms power) helped with the M1 transistor
+ * asynchronous (sms power) also helped with the M1 transistor
+
 ## Version History
 # v0.3 (in development)
 Many new features added on the base of the v0.2, and some bugs fixed. This is intended to be the first public release, but the feature list is not frozen.
