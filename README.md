@@ -27,6 +27,7 @@ Many new features added on the base of the v0.2, and some bugs fixed. This is in
  * Extremely weak video signal fixed.
  * Backwards controller ports fixed.
  * Experimental debounce cap on "pause" button added.
+ * Reset button added.
  * USB power connector shield grounded.
  * Several problems with sporadic interrupts and waits fixed by adding pull-ups.
 
