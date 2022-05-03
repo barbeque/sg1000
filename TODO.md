@@ -39,3 +39,4 @@
 - [x] [Memory Mapper] Dump all the knowledge we have about the memory map into decody to make sure we actually have a 16k window, and not 32k. If we have 32k, just get rid of the mapper.
 - [x] [Memory Mapper] does it make sense to use a '573 instead of a '373? Might be easier to route and find
 - [x] [Memory Mapper] find a spot on the board for it
+- [ ] [Keyboard] Find out if it is possible to get 6u spacebars or if 6.25u is needed

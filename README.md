@@ -2,8 +2,17 @@
 
 Soggy-1000 is an open-source clone of the Sega SG-1000 home videogame system. The eventual goal of the project is to produce a copy of the SG-1000 main console, and the SK-1100 keyboard, so that the software made for the SC-3000 home computer can be preserved and enjoyed.
 
-# License
+## License
 The Soggy project is licensed under [the Creative Commons Attribution-NonCommercial 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
+
+## Sub-Projects
+This repository contains multiple KiCad projects that are related to the overall Soggy project. These are:
+
+ * `keyboard`: An implementation of the SK-1100 keyboard, using modern key switches (Under development)
+ * `romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000
+
+## Assembly Guide and BOM
+TODO
 
 ## Programmer's Guide
 The Soggy is basically identical to the existing SG-1000, with the addition (in v0.3 and onwards) of memory mapping hardware. This hardware allows programmers to take advantage of the full 32k of main RAM on the system.
