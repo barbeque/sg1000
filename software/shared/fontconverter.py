@@ -31,7 +31,7 @@ for i in range(0, 128 - 0x20 - 1):
     left, _, right = left.rpartition(',')
 
     # split up the left side and flip the bytes (this is dumb)
-    left = ', '.join([hex(reverse_byte(int(t.replace('$',''), base=16))) for t in left.split(',')])
+    left = ', '.join(["${:02x}".format(reverse_byte(int(t.replace('$',''), base=16))) for t in left.split(',')])
 
     # add the comment back on
     line = left + '//' + comment
