@@ -32,6 +32,7 @@ for i in range(0, 128 - 0x20 - 1):
     output.append(line)
 
 with open('font_8x8.asm', 'w') as fp:
+    fp.write('FONT_HEAD: \n')
     fp.write('\n'.join(output)) # you would think 'writelines' would imply 'do a newline' but i guess not?
 
 # finish with the };
