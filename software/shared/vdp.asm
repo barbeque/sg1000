@@ -7,29 +7,8 @@
 #define TILEMAP_WIDTH 32
 #define TILEMAP_HEIGHT 24
 
-#define NOP_FUDGE_FACTOR 2
-
-.macro nop_fudge
-    .rept NOP_FUDGE_FACTOR
-    nop
-    .endm
-.endm
-
-.macro set_tile tile_x, tile_y, tile_value
-    ld hl, TILES_BASE + (\tile_y * TILEMAP_WIDTH + \tile_x)
-    call SetVDPWriteAddress
-    ld a, \tile_value
-    out (VDP_DATA),a
-    nop_fudge
-.endm
-
-; Set the flags on a VDP writeable configuration register
-.macro write_vdp_register vdp_register, vdp_value
-    ld a, \vdp_value
-    out (VDP_REGISTERS), a
-    ld a, \vdp_register + 128 ; bit 7 must be set to indicate "write to register"
-    out (VDP_REGISTERS), a
-.endm
+#define FONTS_BASE  $00
+#define FONTS_END   $5f
 
 ; Use the value of HL to set the read/write address.
 ; Obliterates A,C
@@ -82,7 +61,42 @@ _ClearVRAM_Inner:
     ld a,h
     or l
     jr nz, _ClearVRAM_Inner
-    ei
 #endlocal
+    ei
     ret
 
+; Make a simple palette we can all follow
+InitFontPalette:
+    ld hl, COLOURS_BASE
+    call SetVDPWriteAddress
+    ld a, %11011010 ; the ugliest colour imaginable
+    .rept (94 / 8) + 1 ; the number of palettes used for the alphabet tiles
+    out (VDP_DATA),a
+    nop_fudge
+    .endm
+    ret
+
+; Place the font into video RAM, which will end up at $0800 <= x <= $085e (FONTS_BASE)
+DefineFont:
+; Start at FONT_HEAD
+; Write a byte to VRAM and keep going, 94 * 8 times
+    ld hl, PATTERNS_BASE + (FONTS_BASE * 8)
+    call SetVDPWriteAddress
+    ld hl, FONT_HEAD
+    ld c, 94 ; 94 characters
+_DefineFont_Inner:
+    ld b, 8 ; 8 bytes per character
+_DefineFont_Row_Inner:
+    ld a, (hl)
+    inc hl
+    out (VDP_DATA), a
+    nop_fudge
+
+    ; are we done with this character or is there one more row?
+    djnz _DefineFont_Row_Inner
+
+    ; decrement outer counter to move onto next character
+    dec c
+    jp nz, _DefineFont_Inner
+
+    ret
