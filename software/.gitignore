@@ -1,2 +1,4 @@
 *.rom
+*.lst
+*.sc
 *.bin
