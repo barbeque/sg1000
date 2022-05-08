@@ -28,7 +28,7 @@ for i in range(0, 128 - 0x20 - 1):
     # fix comments to assembler syntax
     line = line.replace('//', ';')
     # insert assembler declaration
-    line = '.db ' + line
+    line = '.db ' + line + ' (offset $%02x)' % i
     output.append(line)
 
 with open('font_8x8.asm', 'w') as fp:
