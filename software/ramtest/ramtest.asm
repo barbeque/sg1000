@@ -12,18 +12,14 @@ startup:
     call DefineFont
     call InitFontPalette
 
-    set_tile 0, 0, 0x28 ; 'H'
-    set_tile 1, 0, 0x45 ; 'e'
-    set_tile 2, 0, 0x4c ; 'l'
-    set_tile 3, 0, 0x4c ; 'l'
-    set_tile 4, 0, 0x4f ; 'o'
-    set_tile 5, 0, 0x52 ; 'r'
-    set_tile 6, 0, 0x4c ; 'l'
-    set_tile 7, 0, 0x44 ; 'd'
+    ld b, 0
+    ld c, 0
+    ld hl, STR_BANNER
+    call print_string
 
     ld b, 0
     ld c, 1
-    ld hl, STR_HELLO_WORLD
+    ld hl, STR_URL
     call print_string
 
     ; TODO: write the tester (16-bit index, probably)
@@ -48,7 +44,7 @@ _print_string_inner:
     ld a, (hl)
     sub $20 ; our letter tiles start at 0, but that one is space (ascii 20)
     out (VDP_DATA), a
-    nop_fudge ; FIXME: not sure if we have to nop here, since our loop is so slow
+    nop_fudge ; FIXME: OPTIM: not sure if we have to nop here, since our loop is so slow
 
     inc hl
     ld a, (hl)
@@ -59,7 +55,8 @@ _print_string_inner:
 
     ret
 
-STR_HELLO_WORLD: .asciz "Hello, World"
+STR_BANNER: .asciz "Soggy-1000 RAM tester"
+STR_URL: .asciz "https://www.leadedsolder.com"
 
 #include "../shared/vdp.asm"
 #include "../shared/font_8x8.asm"

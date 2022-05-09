@@ -30,7 +30,7 @@
     push bc
     ld d, c ; row counter ("Y")
     ld e, TILEMAP_WIDTH
-    call DumbMultiply
+    call DumbMultiply ; FIXME: OPTIM: I suspect we don't really need this; we can bit-shift, because width is a power of 2, but who cares?
     pop bc
     ld c, b ; extend b to 16-bit bc so we can add to hl
     ld b, 0 ; is it faster to just do OR?
