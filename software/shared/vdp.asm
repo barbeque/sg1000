@@ -100,3 +100,19 @@ _DefineFont_Row_Inner:
     jp nz, _DefineFont_Inner
 
     ret
+
+DumbMultiply:
+    ; HL = D * E
+    ;   OBLITERATES B
+    ld hl, 0
+    ld a, d
+    or a
+    ret z
+    ld b, d
+    ld d, h
+#local
+_DumbMultiplyLoop:
+    add hl, de
+    djnz _DumbMultiplyLoop
+#endlocal
+    ret

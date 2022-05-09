@@ -21,3 +21,20 @@
     ld a, \vdp_register + 128 ; bit 7 must be set to indicate "write to register"
     out (VDP_REGISTERS), a
 .endm
+
+.macro calculate_write_address_from_xy
+    ; Sets the write address based on a tile position on screen.
+    ; assume that B, C are X, Y
+    ; obliterates BC, HL
+    push de
+    push bc
+    ld d, c ; row counter ("Y")
+    ld e, TILEMAP_WIDTH
+    call DumbMultiply
+    pop bc
+    ld c, b ; extend b to 16-bit bc so we can add to hl
+    ld b, 0 ; is it faster to just do OR?
+    add hl, bc ; have to add 16-bit...
+    ld bc, TILES_BASE
+    pop de
+.endm
