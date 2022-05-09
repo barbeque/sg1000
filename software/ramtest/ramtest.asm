@@ -21,6 +21,11 @@ startup:
     set_tile 6, 0, 0x4c ; 'l'
     set_tile 7, 0, 0x44 ; 'd'
 
+    ; TODO: write the tester (16-bit index, probably)
+    ; TODO: write an ASCII print routine (sub $20)
+    ; TODO: write a routine to print out the failed address if any
+    ; TODO: detect mirroring
+
 busy_loop:
     jr busy_loop
 

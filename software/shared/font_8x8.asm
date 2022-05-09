@@ -1,3 +1,11 @@
+; 
+; Basic 8x8 font header for z80, using zasm syntax
+; 
+; Generated from: Daniel Hepper's 8x8 C font header, https://github.com/dhepper/font8x8; font8x8_basic.h
+; Which was based on: http://dimensionalrift.homelinux.net/combuster/mos3/?p=viewsource&file=/modules/gfx/font8_8.asm
+; 
+; License: Public domain
+; 
 FONT_HEAD: 
 .db $00, $00, $00, $00, $00, $00, $00, $00; U+0020 (space) (offset $00)
 .db $18, $3c, $3c, $18, $18, $00, $18, $00; U+0021 (!) (offset $01)

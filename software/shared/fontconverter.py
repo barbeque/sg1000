@@ -1,3 +1,12 @@
+HEADER = """
+Basic 8x8 font header for z80, using zasm syntax
+
+Generated from: Daniel Hepper's 8x8 C font header, https://github.com/dhepper/font8x8; font8x8_basic.h
+Which was based on: http://dimensionalrift.homelinux.net/combuster/mos3/?p=viewsource&file=/modules/gfx/font8_8.asm
+
+License: Public domain
+"""
+
 characters = []
 
 with open('font8x8_basic.h', 'r') as fp:
@@ -46,6 +55,10 @@ for i in range(0, 128 - 0x20 - 1):
     output.append(line)
 
 with open('font_8x8.asm', 'w') as fp:
+    # inject the header comment
+    for line in HEADER.split('\n'):
+        fp.write('; %s\n' % line)
+
     fp.write('FONT_HEAD: \n')
     fp.write('\n'.join(output)) # you would think 'writelines' would imply 'do a newline' but i guess not?
 
