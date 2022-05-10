@@ -48,9 +48,6 @@ _MemTest_Inner_End:
     
     jr Test_Passed
 
-    ; TODO: write an ASCII print routine (sub $20)
-    ; TODO: write a routine to print out the failed address if any
-
 _MemTest_ReadbackFailed:
     ; Print value of HL, which still should
     ; be the last address tested
@@ -62,7 +59,7 @@ _MemTest_ReadbackFailed:
     ld c, 2
     ld hl, STR_READBACK_FAILED
     call print_string
-    ; TODO: Print failed address HL
+    
     jr busy_loop
 
 _MemTest_MirrorDetected:
@@ -76,7 +73,7 @@ _MemTest_MirrorDetected:
     ld c, 2
     ld hl, STR_MIRRORED
     call print_string
-    ; TODO: Print failed address HL
+    
     jr busy_loop
 
 Test_Passed:
@@ -84,12 +81,6 @@ Test_Passed:
     ld c, 2
     ld hl, STR_PASSED
     call print_string
-
-    ; ok, let's try printing some test hexes
-    ld b, 1
-    ld c, 3
-    ld hl, $0101
-    call print_hex
 
     jr busy_loop
 busy_loop:
