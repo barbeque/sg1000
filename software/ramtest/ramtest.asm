@@ -2,6 +2,8 @@
 #define RAM_PAGED_BASE $e000
 #define PAGE_REGISTER $10
 
+#define TEST_LENGTH 2048 ; 2k - SG-1000 II
+
 #include "../shared/vdp_macros.asm"
 
 #target rom
@@ -22,9 +24,22 @@ startup:
     ld hl, STR_URL
     call print_string
 
+_WipeMemory:
+    ; We have no idea what state the RAM is in at startup,
+    ; so we're going to zero it out up to TEST_LENGTH
+    ld hl, RAM_BASE
+    ld de, TEST_LENGTH
+_WipeMemory_Inner:
+    ld (hl), $00
+    inc hl
+    dec de
+    ld a, d
+    or e
+    jr nz, _WipeMemory_Inner
+
     ; begin the memory test - first 1k for check
     ld hl, RAM_BASE
-    ld de, $0400 ; 1k
+    ld de, TEST_LENGTH
 _MemTest_Inner:
     ld a, (hl)
     cp a, $aa ; TODO: Use the RAM_TEST_VALUE_* and do this in a loop
@@ -77,9 +92,20 @@ _MemTest_MirrorDetected:
     jr busy_loop
 
 Test_Passed:
+    ; Print the final address tested
+    ld b, 21
+    ld c, 3
+    call print_hex
+
+    ; Now the strings for the humans...
     ld b, 0
     ld c, 2
     ld hl, STR_PASSED
+    call print_string
+
+    ld b, 0
+    ld c, 3
+    ld hl, STR_TESTED
     call print_string
 
     jr busy_loop
@@ -189,6 +215,7 @@ STR_URL: .asciz "https://www.leadedsolder.com"
 STR_MIRRORED: .asciz "Mirroring detected at:"
 STR_READBACK_FAILED: .asciz "Readback didn't match!"
 STR_PASSED: .asciz "Memory test passed."
+STR_TESTED: .asciz "Tested up to address"
 
 RAM_TEST_VALUES: .db $aa, $55, $cc, $00, $ff
 
