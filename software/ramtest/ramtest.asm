@@ -25,11 +25,11 @@ startup:
     retn
 
 init:
-    di
-
-    .rept 1000
+    .rept 10
     nop
     .endm
+
+    di
 
     call ScreenInit
     call ClearVRAM
@@ -49,7 +49,8 @@ init:
 
 _WipeMemory:
     ; We have no idea what state the RAM is in at startup,
-    ; so we're going to zero it out up to TEST_LENGTH
+    ; so we're going to zero it out up to TEST_LENGTH.
+    ; Note that this will frag the stack, big-league
     ld hl, RAM_BASE
     ld de, TEST_LENGTH
 _WipeMemory_Inner:
