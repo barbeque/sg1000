@@ -27,12 +27,14 @@ _SetVDPAddress:
     ret
 
 ScreenInit:
-    di
+    ; interrupts should be disabled and the stack should be setup
+    ; before calling this!
+
     ; no mode 2, no extvid
     write_vdp_register 0, %00000000
-    ; 16K, graphics mode 0, enable display, no retrace interrupt
+    ; 16K, graphics mode 0, DISABLE display, no retrace interrupt
     ; mode 0 (32x24, 768 element pattern name table)
-    write_vdp_register 1, %11000000
+    write_vdp_register 1, %10000000
     ; set pattern name (tilemap) table to $0000
     write_vdp_register 2, %00000000
     ; set colour table to come right after PN table; $0340
@@ -43,17 +45,17 @@ ScreenInit:
     ; sprite generator table address
     write_vdp_register 6, %00000111 ; FIXME: don't know where to put this, cram it high up
     ; low nibble = background colour
-    write_vdp_register 7, %00000000
+    write_vdp_register 7, %00100101
+    ret
 
     ; ...now clear VRAM
-#local
-_ClearVRAM: ; SLOW
+ClearVRAM: ; SLOW
     ; just count from 0 to 3fff and write the VDP
-    ld hl, 0x0
+    ld hl, $00
     call SetVDPWriteAddress
-    ld hl, 0x3fff
+    ld hl, $3fff
 _ClearVRAM_Inner:
-    ld a, 0 ; value to write
+    ld a, $00 ; value to write
     out (VDP_DATA), a
     nop_fudge
     ; world's slowest 16-bit loop (ref: http://map.grauw.nl/articles/fast_loops.php)
@@ -61,8 +63,6 @@ _ClearVRAM_Inner:
     ld a,h
     or l
     jr nz, _ClearVRAM_Inner
-#endlocal
-    ei
     ret
 
 ; Make a simple palette we can all follow

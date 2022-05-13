@@ -13,13 +13,29 @@
 #code rom, 0x0000, *
 startup:
     ld sp, $c3ff ; set stack pointer like Girl's Garden does
-    .rept 10
-    nop ; NOP bodge, to give the VDP a chance to reset?
+    im 1
+    jr init
+
+.org $0038
+    ; reset handler
+    reti
+
+.org $0066
+    ; pause button handler stub (return from NMI)
+    retn
+
+init:
+    di
+
+    .rept 1000
+    nop
     .endm
+
     call ScreenInit
+    call ClearVRAM
     call DefineFont
     call InitFontPalette
-    call MutePSG
+    call MutePSG ; we know for sure we are getting to here
 
     ld b, 0
     ld c, 0
@@ -44,7 +60,7 @@ _WipeMemory_Inner:
     or e
     jr nz, _WipeMemory_Inner
 
-    ; begin the memory test - first 1k for check
+    ; begin the memory test - basic unpaged region
     ld hl, RAM_BASE
     ld de, TEST_LENGTH
 _MemTest_Inner:
@@ -115,9 +131,11 @@ Test_Passed:
     ld hl, STR_TESTED
     call print_string
 
-    jr busy_loop
+    ; fuck it
 busy_loop:
-    jr busy_loop
+    write_vdp_register 1, %11000000
+busy_loop_inner:
+    jr busy_loop_inner
 
 get_hex_digit:
     ; arguments:
@@ -225,7 +243,6 @@ _print_string_inner:
     ; is next character null?
     jr nz, _print_string_inner
 #endlocal
-
     ret
 
 STR_BANNER: .asciz "Soggy-1000 RAM tester"

@@ -1,4 +1,4 @@
-#define NOP_FUDGE_FACTOR 2
+#define NOP_FUDGE_FACTOR 4
 
 .macro nop_fudge
     .rept NOP_FUDGE_FACTOR
@@ -18,8 +18,10 @@
 .macro write_vdp_register vdp_register, vdp_value
     ld a, \vdp_value
     out (VDP_REGISTERS), a
-    ld a, \vdp_register + 128 ; bit 7 must be set to indicate "write to register"
+    nop_fudge
+    ld a, \vdp_register + $80 ; bit 7 must be set to indicate "write to register"
     out (VDP_REGISTERS), a
+    nop_fudge
 .endm
 
 .macro calculate_write_address_from_xy
