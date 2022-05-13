@@ -12,6 +12,10 @@
 #data DATA, RAM_BASE, *
 #code rom, 0x0000, *
 startup:
+    ld sp, $c3ff ; set stack pointer like Girl's Garden does
+    .rept 10
+    nop ; NOP bodge, to give the VDP a chance to reset?
+    .endm
     call ScreenInit
     call DefineFont
     call InitFontPalette
