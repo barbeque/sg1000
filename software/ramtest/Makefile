@@ -3,7 +3,7 @@ local_path = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 all: ramtest.sc
 
-ramtest.sc: ramtest.asm
+ramtest.sc: ramtest.asm ../shared/*.asm
 	zasm ${ZASM_FLAGS} ramtest.asm ramtest.sc
 
 run: ramtest.sc
@@ -14,6 +14,12 @@ debug: ramtest.sc
 
 openshots:
 	open ${MAME_PATH}/snap/sc3000
+
+pad: ramtest.sc
+	python3 ./prepare.py -s 256 ramtest.sc
+
+burn: ramtest.padded.bin
+	minipro -p MX27C256@DIP28 -w ramtest.padded.bin
 
 clean:
 	rm -rf ramtest.sc
