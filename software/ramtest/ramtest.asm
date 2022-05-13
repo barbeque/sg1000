@@ -98,7 +98,7 @@ _MemTest_ReadbackFailed:
     ld hl, STR_READBACK_FAILED
     call print_string
     
-    jr busy_loop
+    jr done_testing
 
 _MemTest_MirrorDetected:
     ; Print value of HL
@@ -112,7 +112,7 @@ _MemTest_MirrorDetected:
     ld hl, STR_MIRRORED
     call print_string
     
-    jr busy_loop
+    jr done_testing
 
 Test_Passed:
     ; Print the final address tested
@@ -131,11 +131,10 @@ Test_Passed:
     ld hl, STR_TESTED
     call print_string
 
-    ; fuck it
-busy_loop:
+done_testing:
     write_vdp_register 1, %11000000
-busy_loop_inner:
-    jr busy_loop_inner
+busy_loop:
+    jr busy_loop
 
 get_hex_digit:
     ; arguments:

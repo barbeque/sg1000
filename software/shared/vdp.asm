@@ -34,7 +34,7 @@ ScreenInit:
     write_vdp_register 0, %00000000
     ; 16K, graphics mode 0, DISABLE display, no retrace interrupt
     ; mode 0 (32x24, 768 element pattern name table)
-    write_vdp_register 1, %10000000
+    write_vdp_register 1, %11000000
     ; set pattern name (tilemap) table to $0000
     write_vdp_register 2, %00000000
     ; set colour table to come right after PN table; $0340
