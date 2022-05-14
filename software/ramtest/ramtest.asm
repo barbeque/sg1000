@@ -42,7 +42,7 @@ _busywait_inner:
     ret
 
 init:
-    ld de, $1
+    call MutePSG ; we know for sure we are getting to here
     call BusyWait
 _really_ready_now:
 
@@ -52,7 +52,6 @@ _really_ready_now:
     call ClearVRAM
     call DefineFont
     call InitFontPalette
-    call MutePSG ; we know for sure we are getting to here
 
     ld b, 0
     ld c, 0
@@ -151,7 +150,6 @@ Test_Passed:
     call print_string
 
 done_testing:
-    ;write_vdp_register 1, %11000000
 busy_loop:
     jr busy_loop
 
