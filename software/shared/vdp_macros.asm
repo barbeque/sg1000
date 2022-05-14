@@ -1,4 +1,4 @@
-#define NOP_FUDGE_FACTOR 2
+#define NOP_FUDGE_FACTOR 4
 
 .macro nop_fudge
     .rept NOP_FUDGE_FACTOR

@@ -24,8 +24,12 @@ startup:
     ; pause button handler stub (return from NMI)
     retn
 
+    ; The VDP gets reset at system startup, but it takes a lot
+    ; longer than the CPU to be ready for action. We could do a
+    ; bunch of setup stuff here, but instead we'll just spin until
+    ; we think the VDP should be willing to listen to us.
 BusyWait:
-    ld d, $f ; girls garden used $2 x $ffff
+    ld d, $3 ; girls garden used $2 x $ffff
 _busywait_outer:
     ld hl, $ffff
 _busywait_inner:
@@ -74,6 +78,7 @@ _WipeMemory_Inner:
     or e
     jr nz, _WipeMemory_Inner
 
+MemTest:
     ; begin the memory test - basic unpaged region
     ld hl, RAM_BASE
     ld de, TEST_LENGTH

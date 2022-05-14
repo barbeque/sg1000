@@ -95,7 +95,6 @@ _DefineFont_Row_Inner:
     inc hl
     out (VDP_DATA), a
     nop_fudge
-    nop_fudge
 
     ; are we done with this character or is there one more row?
     djnz _DefineFont_Row_Inner
