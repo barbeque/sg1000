@@ -33,7 +33,7 @@ ScreenInit:
     ; no mode 2, no extvid
     write_vdp_register 0, %00000000
     ; 16K, graphics mode 0, DISABLE display, no retrace interrupt
-    ; mode 0 (32x24, 768 element pattern name table)
+    ; mode 0 (32x24, 768 element pattern name table w/o sprites)
     write_vdp_register 1, %11000000
     ; set pattern name (tilemap) table to $0000
     write_vdp_register 2, %00000000

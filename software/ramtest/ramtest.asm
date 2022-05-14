@@ -24,10 +24,23 @@ startup:
     ; pause button handler stub (return from NMI)
     retn
 
+BusyWait:
+    ld d, $f
+_busywait_outer:
+    ld hl, $ffff
+_busywait_inner:
+    dec hl
+    ld a,h
+    or l
+    jr nz, _busywait_inner
+    dec d
+    jr nz, _busywait_outer
+    ret
+
 init:
-    .rept 10
-    nop
-    .endm
+    ld de, $1
+    call BusyWait
+_really_ready_now:
 
     di
 
@@ -133,7 +146,7 @@ Test_Passed:
     call print_string
 
 done_testing:
-    write_vdp_register 1, %11000000
+    ;write_vdp_register 1, %11000000
 busy_loop:
     jr busy_loop
 
