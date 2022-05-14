@@ -25,7 +25,7 @@ startup:
     retn
 
 BusyWait:
-    ld d, $f
+    ld d, $f ; girls garden used $2 x $ffff
 _busywait_outer:
     ld hl, $ffff
 _busywait_inner:
