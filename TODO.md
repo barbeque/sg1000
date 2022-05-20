@@ -40,3 +40,4 @@
 - [x] [Memory Mapper] does it make sense to use a '573 instead of a '373? Might be easier to route and find
 - [x] [Memory Mapper] find a spot on the board for it
 - [ ] [Keyboard] Find out if it is possible to get 6u spacebars or if 6.25u is needed
+- [ ] [Software] RAM tester, in Z80 assembly so we can control the RAM.
