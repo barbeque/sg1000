@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name "SoggyCartridge")(type "KiCad")(uri "${KIPRJMOD}/SoggyCartridge.pretty")(options "")(descr ""))
-  (lib (name "Logos")(type "KiCad")(uri "${KIPRJMOD}/../Logos.pretty")(options "")(descr ""))
+  (lib (name "Logos")(type "KiCad")(uri "${KIPRJMOD}/../../Logos.pretty")(options "")(descr ""))
 )
