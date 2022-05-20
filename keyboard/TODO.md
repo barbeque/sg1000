@@ -1,0 +1,11 @@
+- [ ] convert to kicad 6 somehow so it's consistent
+- [ ] rewire the entire matrix, the generated one is wrong
+- [ ] wire the 8255
+- [ ] change footprint to a dip atmega because why not
+- [ ] have a footprint to program the dip atmega (note that the icsp header may be non-standard as provided: https://github.com/jeroen94704/klepcbgen/issues/13)
+- [ ] [pc6601] add 4p4c header
+- [ ] add proto area
+- [ ] add sega header (use a keyed internal SCSI connector)
+- [ ] [pc6601] add ir led and resistor and transistor?
+- [ ] add mounting holes for eventual enclosure, feet for now
+- [x] re-do the layout again now that the keys have changed - shift is 2.25u for instance
