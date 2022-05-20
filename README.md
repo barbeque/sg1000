@@ -9,7 +9,8 @@ The Soggy project is licensed under [the Creative Commons Attribution-NonCommerc
 This repository contains multiple KiCad projects that are related to the overall Soggy project. These are:
 
  * `keyboard`: An implementation of the SK-1100 keyboard, using modern key switches (Under development)
- * `romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000
+ * `cartridges/romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000
+ * `cartridges/basic-iiib`: An implementation of the SEGA BASIC Level IIIB cartridge, used for testing purposes in order to make sure cartridges can take over the entire memory map (Untested)
 
 ## Assembly Guide and BOM
 TODO
@@ -23,6 +24,7 @@ TODO: Use IOW + $10 to set it
 ## Special Thanks
 The following people helped me figure out some aspect of the SG-1000, fixed a bug in my hardware, or otherwise contributed.
 
+ * Nick Hook from SC-3000 Survivors helped with providing diagrams, pictures, and SF-7000 information
  * Fabio Dalla Libera (sms power) helped with the M1 transistor
  * asynchronous (sms power) also helped with the M1 transistor
 
