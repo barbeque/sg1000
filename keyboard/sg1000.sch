@@ -2773,4 +2773,6 @@ Wire Wire Line
 	7400 7750 7400 6650
 Wire Wire Line
 	7400 6650 7325 6650
+Text Notes 10700 8200 0    50   ~ 0
+TODO: Double check circuit when less tired
 $EndSCHEMATC
