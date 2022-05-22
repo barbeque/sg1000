@@ -36,6 +36,9 @@ Many new features added on the base of the v0.2, and some bugs fixed. This is in
  * The full 62256 SRAM is wired up, providing 32K of work RAM to the system. The first 8K are accessible without touching the memory management unit; the second 8K can be switched between four "pages." This should allow Sega BASIC and many other titles relying on SC-3000 functions to work. A 2K mod, matching the SC-3000, was bodged on the previous board.
  * An onboard BIOS ROM socket has been added, which runs when a cartridge is not inserted (detected through the "B2" pin on the cartridge slot, which is usually connected to B1 inside cartridges)
 
+Known bugs:
+ * /JOY_SEL is not connected to the keyboard edge
+
 # v0.2
  * SK-1100 keyboard edge connector added.
  * Sound chip-induced lockup under /M1 fixed.
@@ -46,5 +49,11 @@ Many new features added on the base of the v0.2, and some bugs fixed. This is in
  * USB power connector shield grounded.
  * Several problems with sporadic interrupts and waits fixed by adding pull-ups.
 
+Known bugs:
+ * /JOY_SEL is not connected to the keyboard edge
+
 # v0.1
 Initial release.
+
+Known bugs:
+ * Too many to list.
