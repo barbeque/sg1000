@@ -33,7 +33,7 @@ The following people helped me figure out some aspect of the SG-1000, fixed a bu
 Many new features added on the base of the v0.2, and some bugs fixed. This is intended to be the first public release, but the feature list is not frozen.
 
  * /IORD and /IOWR signals (IORQ + WR/RD) synthesized and passed to cartridge port. This prevented the SF-7000 from working, as did an I/O map collision with the keyboard. Both problems are now fixed.
- * The full 62256 SRAM is wired up, providing 32K of work RAM to the system. The first 8K are accessible without touching the memory management unit; the second 8K can be switched between four "pages." This should allow Sega BASIC and many other titles relying on SC-3000 functions to work. A 2K mod, matching the SC-3000, was bodged on the previous board.
+ * The full 62256 SRAM is wired up, providing 32K of work RAM to the system. The first 8K are accessible without touching the memory management unit; the second 8K can be switched between four "pages." This should allow Sega BASIC and many other titles relying on SC-3000 functions to work. Previous boards had a 2K mod, matching the SC-3000, but this was not tested.
  * An onboard BIOS ROM socket has been added, which runs when a cartridge is not inserted (detected through the "B2" pin on the cartridge slot, which is usually connected to B1 inside cartridges)
 
 Known bugs:
