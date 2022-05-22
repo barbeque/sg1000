@@ -7006,7 +7006,7 @@
   (gr_text "~{CS_PSG}" (at 80.772 159.385) (layer "B.SilkS") (tstamp 589609d2-fa46-442e-877e-5af1e3e5b794)
     (effects (font (size 0.75 0.75) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "thanks to:\nFabio Dalla Libera (sms power)\nasynchronous (sms power)" (at 172.974 172.339 270) (layer "B.SilkS") (tstamp 60f6b3ac-1dae-4ea0-80bb-af917d1274a4)
+  (gr_text "thanks to:\nFabio Dalla Libera (sms power)\nasynchronous (sms power)\nNick Hook (sc-3000 survivors)" (at 172.685 172.339 270) (layer "B.SilkS") (tstamp 60f6b3ac-1dae-4ea0-80bb-af917d1274a4)
     (effects (font (size 1.2 1.2) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "~{OE}" (at 111.506 107.315 90) (layer "B.SilkS") (tstamp 6518317e-e43e-47a7-81f2-e8b7e8b96202)
