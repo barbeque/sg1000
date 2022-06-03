@@ -5355,7 +5355,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1164d3f4-cfbb-41b0-a80b-806c79773238)
     )
-    (fp_text value "74HCT04" (at 3.81 17.57 180) (layer "F.Fab")
+    (fp_text value "74HCT04" (at 3.81 17.57 180) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b6e9d650-1176-4786-876c-442dfe29182c)
     )
