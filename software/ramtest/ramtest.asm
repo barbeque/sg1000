@@ -2,7 +2,7 @@
 #define RAM_PAGED_BASE $e000
 #define PAGE_REGISTER $10
 
-#define TEST_LENGTH 2048 ; 2k - SG-1000 II
+#define TEST_LENGTH 8192 ; 8k - Soggy-1000 v3+ unpaged
 
 #define PSG_REGISTERS $7f
 
@@ -116,7 +116,7 @@ _MemTest_ReadbackFailed:
     ld hl, STR_READBACK_FAILED
     call print_string
     
-    jr done_testing
+    jp done_testing
 
 _MemTest_MirrorDetected:
     ; Print value of HL
@@ -130,7 +130,7 @@ _MemTest_MirrorDetected:
     ld hl, STR_MIRRORED
     call print_string
     
-    jr done_testing
+    jp done_testing
 
 Test_Passed:
     ; Print the final address tested
@@ -148,6 +148,75 @@ Test_Passed:
     ld c, 3
     ld hl, STR_TESTED
     call print_string
+
+; Begin paging test
+Paging_Test:
+    ld a, 0 ; page 1 of 4
+    out (PAGE_REGISTER), a
+    ld a, $cc
+    ld (RAM_PAGED_BASE), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $cc
+    jr nz, Basic_Page_Write_Failed
+
+    ld a, 1 ; page 2 of 4
+    out (PAGE_REGISTER), a
+    ld a, $aa
+    ld (RAM_PAGED_BASE), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $aa
+    jr nz, Basic_Page_Write_Failed
+
+    ; Switch back to page 1 and make sure it's still the same
+    ld a, 0
+    out (PAGE_REGISTER), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $cc
+    jr nz, Basic_Page_Read_Failed
+
+    ; ...and then back again, and read again.
+    ld a, 1
+    out (PAGE_REGISTER), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $aa
+    jr nz, Basic_Page_Read_Failed
+
+    ld a, 2 ; page 3 of 4
+    out (PAGE_REGISTER), a
+    ld a, $de
+    ld (RAM_PAGED_BASE), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $de
+    jr nz, Basic_Page_Write_Failed
+
+    ld a, 3 ; page 4 of 4
+    out (PAGE_REGISTER), a
+    ld a, $55
+    ld (RAM_PAGED_BASE), a
+    ld a, (RAM_PAGED_BASE)
+    cp a, $55
+    jr nz, Basic_Page_Write_Failed
+
+Page_Test_Passed:
+    ld b, 0
+    ld c, 4
+    ld hl, STR_PAGING_WORKS
+    call print_string
+    jr done_testing
+
+Basic_Page_Write_Failed:
+    ld b, 0
+    ld c, 4
+    ld hl, STR_READBACK_FAILED_PAGED
+    call print_string
+    jr done_testing
+
+Basic_Page_Read_Failed:
+    ld b, 0
+    ld c, 4
+    ld hl, STR_PAGE_SWITCH_FAILED
+    call print_string
+    jr done_testing
 
 done_testing:
 busy_loop:
@@ -261,12 +330,15 @@ _print_string_inner:
 #endlocal
     ret
 
-STR_BANNER: .asciz "Soggy-1000 RAM tester"
-STR_URL: .asciz "https://www.leadedsolder.com"
+STR_BANNER: .asciz "Soggy-1000 RAM tester +8K +Paged"
+STR_URL: .asciz "v3 https://www.leadedsolder.com"
 STR_MIRRORED: .asciz "Mirroring detected at:"
 STR_READBACK_FAILED: .asciz "Readback didn't match!"
 STR_PASSED: .asciz "Memory test passed."
 STR_TESTED: .asciz "Tested up to address"
+STR_READBACK_FAILED_PAGED: .asciz "Paged readback didn't match!"
+STR_PAGING_WORKS: .asciz "Paging test passed."
+STR_PAGE_SWITCH_FAILED: .asciz "Page switching didn't work?"
 
 RAM_TEST_VALUES: .db $aa, $55, $cc, $00, $ff
 
