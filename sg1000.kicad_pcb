@@ -7070,7 +7070,7 @@
   (gr_text "RESET" (at 42.037 179.451) (layer "F.SilkS") (tstamp 42bffeed-a4c3-4b1e-b99c-35eded0c1e81)
     (effects (font (size 1.5 1.5) (thickness 0.375)))
   )
-  (gr_text "v0.3" (at 104.013 143.256) (layer "F.SilkS") (tstamp 44a70bca-a24f-4002-81d4-ed08dc58e0ca)
+  (gr_text "v0.4" (at 104.013 143.256) (layer "F.SilkS") (tstamp 44a70bca-a24f-4002-81d4-ed08dc58e0ca)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "1" (at 96.774 162.306) (layer "F.SilkS") (tstamp 4a1f1d7e-b1de-4af2-9615-59a8b75ad59c)

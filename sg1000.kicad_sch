@@ -7450,6 +7450,10 @@
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid d815f6a2-472d-46b7-9870-940547dcde97)
   )
+  (text "TODO: ~{JOYSEL} is missing!" (at 167.64 552.45 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid dfce50ae-9c75-400a-89e9-10733cd928eb)
+  )
   (text "Decode defeat for $e0 to $ff\n(SF-7000 compatibility: its I/O port is there)"
     (at 13.335 194.945 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
