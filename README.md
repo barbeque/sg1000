@@ -29,8 +29,16 @@ The following people helped me figure out some aspect of the SG-1000, fixed a bu
  * asynchronous (sms power) also helped with the M1 transistor
 
 ## Version History
-# v0.3 (in development)
-Many new features added on the base of the v0.2, and some bugs fixed. This is intended to be the first public release, but the feature list is not frozen.
+# v0.4 (in development)
+This version is in active development and may not be suitable for testing yet.
+
+ * /JOY_SEL signal connected to keyboard edge, allowing keyboard 8255 to force polling of joysticks when row 7 of matrix is requested.
+ * Converted to DIP Z80 from PLCC, to allow cheaper AliExpress parts to be used rather than expensive new PLCC Z80 part. New DIP Z80s are also still available from Digi-Key, Mouser, etc.
+ * Debounce circuit on NMI pin using a Schmitt trigger (design from [this Tynemouth Software blog entry](http://blog.tynemouthsoftware.co.uk/2022/07/how-the-mini-pet-works-debouncing.html), thank you)
+ * Weird overpour onto cartridge edge fixed, as were some missing silkscreens for '574 and '04
+
+# v0.3
+Many new features added on the base of the v0.2, and some bugs fixed. This was intended to be the first public release, and is recommended for most people.
 
  * /IORD and /IOWR signals (IORQ + WR/RD) synthesized and passed to cartridge port. This prevented the SF-7000 from working, as did an I/O map collision with the keyboard. Both problems are now fixed.
  * The full 62256 SRAM is wired up, providing 32K of work RAM to the system. The first 8K are accessible without touching the memory management unit; the second 8K can be switched between four "pages." This should allow Sega BASIC and many other titles relying on SC-3000 functions to work. Previous boards had a 2K mod, matching the SC-3000, but this was not tested.
