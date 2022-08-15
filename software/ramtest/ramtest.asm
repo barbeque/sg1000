@@ -77,6 +77,23 @@ _WipeMemory_Inner:
     or e
     jr nz, _WipeMemory_Inner
 
+    ; Check for keyboard presence
+    call InitializeKeyboard
+    call IsKeyboardAttached
+    cp a, $ff
+    jr z, _YesKeyboard
+_NoKeyboard:
+    ld b, 0
+    ld c, 23
+    ld hl, STR_NO_KEYBOARD_FOUND
+    call print_string
+    jr MemTest
+_YesKeyboard:
+    ld b, 0
+    ld c, 23
+    ld hl, STR_KEYBOARD_FOUND
+    call print_string
+    jr MemTest
 MemTest:
     ; begin the memory test - basic unpaged region
     ld hl, RAM_BASE
@@ -339,8 +356,11 @@ STR_TESTED: .asciz "Tested up to address"
 STR_READBACK_FAILED_PAGED: .asciz "Paged readback didn't match!"
 STR_PAGING_WORKS: .asciz "Paging test passed."
 STR_PAGE_SWITCH_FAILED: .asciz "Page switching didn't work?"
+STR_KEYBOARD_FOUND: .asciz "Keyboard detected"
+STR_NO_KEYBOARD_FOUND: .asciz "No keyboard!"
 
 RAM_TEST_VALUES: .db $aa, $55, $cc, $00, $ff
 
 #include "../shared/vdp.asm"
 #include "../shared/font_8x8.asm"
+#include "../shared/keyboard.asm"
