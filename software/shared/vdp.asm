@@ -73,7 +73,7 @@ _ClearVRAM_Inner:
 InitFontPalette:
     ld hl, COLOURS_BASE
     call SetVDPWriteAddress
-    ld a, %00011111 ; white on black
+    ld a, %11110100 ; white on blue background
     .rept (94 / 8) + 1 ; the number of palettes used for the alphabet tiles
     out (VDP_DATA),a
     nop_fudge
