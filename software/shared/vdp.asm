@@ -45,7 +45,7 @@ ScreenInit:
     ; sprite generator table address
     write_vdp_register 6, %00000111 ; FIXME: don't know where to put this, cram it high up
     ; low nibble = background colour
-    write_vdp_register 7, %00100101
+    write_vdp_register 7, %00100000
 
     ; read the status register to clear any INT or C flag
     in a, (VDP_REGISTERS)
