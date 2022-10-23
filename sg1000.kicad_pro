@@ -427,6 +427,7 @@
         "nets": [
           "+5V",
           "/Fused_Power",
+          "/MD_VCC",
           "/USB_Power",
           "GND"
         ],
