@@ -20,7 +20,6 @@ IsKeyboardAttached:
     nop
     nop
     in a, (KEYBOARD_LATCH_PORT)
-_DEBUG:
     cp a, TEST_BYTE
     jp z, _YesKeyboard
     ld a, $00 ; no keyboard found
