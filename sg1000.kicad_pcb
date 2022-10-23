@@ -7168,7 +7168,7 @@
   (gr_text "~{CS_PSG}" (at 80.772 159.385) (layer "B.SilkS") (tstamp 589609d2-fa46-442e-877e-5af1e3e5b794)
     (effects (font (size 0.75 0.75) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "thanks to:\nFabio Dalla Libera (sms power)\nasynchronous (sms power)" (at 172.974 172.339 270) (layer "B.SilkS") (tstamp 60f6b3ac-1dae-4ea0-80bb-af917d1274a4)
+  (gr_text "thanks to:\nFabio Dalla Libera (sms power)\nasynchronous (sms power)\nEnri" (at 171.958 172.466 270) (layer "B.SilkS") (tstamp 60f6b3ac-1dae-4ea0-80bb-af917d1274a4)
     (effects (font (size 1.2 1.2) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "d7" (at 137.033 67.31) (layer "B.SilkS") (tstamp 6778976d-e492-4b26-8c0d-a4ee36e1bbde)

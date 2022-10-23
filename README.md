@@ -24,6 +24,7 @@ TODO: Use IOW + $10 to set it
 ## Special Thanks
 The following people helped me figure out some aspect of the SG-1000, fixed a bug in my hardware, or otherwise contributed.
 
+ * Enri for providing [SC-3000 and SG-1000 schematics](http://www43.tok2.com/home/cmpslv/Sc3000/EnrSC.htm)
  * Nick Hook from SC-3000 Survivors helped with providing diagrams, pictures, and SF-7000 information
  * Fabio Dalla Libera (sms power) helped with the M1 transistor
  * asynchronous (sms power) also helped with the M1 transistor
@@ -35,7 +36,7 @@ This version is in active development and may not be suitable for testing yet.
  * /JOY_SEL signal connected to keyboard edge, allowing keyboard 8255 to force polling of joysticks when row 7 of matrix is requested.
  * Converted to DIP Z80 from PLCC, to allow cheaper AliExpress parts to be used rather than expensive new PLCC Z80 part. New DIP Z80s are also still available from Digi-Key, Mouser, etc.
  * Debounce circuit on NMI pin using a Schmitt trigger (design from [this Tynemouth Software blog entry](http://blog.tynemouthsoftware.co.uk/2022/07/how-the-mini-pet-works-debouncing.html), thank you)
- * Weird overpour onto cartridge edge fixed, as were some missing silkscreens for '574 and '04
+ * Weird overpour onto expansion edge fixed, as were some missing silkscreens for '574 and '04
 
 # v0.3
 Many new features added on the base of the v0.2, and some bugs fixed. This was intended to be the first public release, and is recommended for most people.
