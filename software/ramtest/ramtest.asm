@@ -58,18 +58,33 @@ _really_ready_now:
     ; draw the logo
     call DrawLogo
 
-_spin_forever:
-    jr _spin_forever
+    ld b, LOGO_WIDTH
+    ld c, 1
+    ld hl, STR_INTRO
+    call print_string
 
-    ld b, 0
-    ld c, 0
+    ld b, LOGO_WIDTH
+    ld c, 2
+    ld hl, STR_INTRO_2
+    call print_string
+
+    ld b, LOGO_WIDTH
+    ld c, 3
+    ld hl, STR_URL
+    call print_string
+
+    ld b, LOGO_WIDTH
+    ld c, 4
     ld hl, STR_BANNER
     call print_string
 
-    ld b, 0
-    ld c, 1
-    ld hl, STR_URL
+    ld b, LOGO_WIDTH
+    ld c, 5
+    ld hl, STR_FEATURES
     call print_string
+
+#define CONSOLE_START_X 1
+#define CONSOLE_START_Y 6
 
 _WipeMemory:
     ; We have no idea what state the RAM is in at startup,
@@ -91,13 +106,13 @@ _WipeMemory_Inner:
     cp a, $ff
     jr z, _YesKeyboard
 _NoKeyboard:
-    ld b, 0
+    ld b, CONSOLE_START_X
     ld c, 23
     ld hl, STR_NO_KEYBOARD_FOUND
     call print_string
     jr MemTest
 _YesKeyboard:
-    ld b, 0
+    ld b, CONSOLE_START_X
     ld c, 23
     ld hl, STR_KEYBOARD_FOUND
     call print_string
@@ -132,12 +147,12 @@ _MemTest_Inner_End:
 _MemTest_ReadbackFailed:
     ; Print value of HL, which still should
     ; be the last address tested
-    ld b, 1
-    ld c, 3
+    ld b, CONSOLE_START_X + 1
+    ld c, CONSOLE_START_Y + 1
     call print_hex
     ; Print explanatory string
-    ld b, 0
-    ld c, 2
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y
     ld hl, STR_READBACK_FAILED
     call print_string
     
@@ -145,13 +160,13 @@ _MemTest_ReadbackFailed:
 
 _MemTest_MirrorDetected:
     ; Print value of HL
-    ld b, 1
-    ld c, 3
+    ld b, CONSOLE_START_X + 1
+    ld c, CONSOLE_START_Y + 1
     call print_hex
 
     ; Print explanatory string
-    ld b, 0
-    ld c, 2
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y
     ld hl, STR_MIRRORED
     call print_string
     
@@ -159,18 +174,18 @@ _MemTest_MirrorDetected:
 
 Test_Passed:
     ; Print the final address tested
-    ld b, 21
-    ld c, 3
+    ld b, 21 + CONSOLE_START_X
+    ld c, CONSOLE_START_Y + 1
     call print_hex
 
     ; Now the strings for the humans...
-    ld b, 0
-    ld c, 2
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y
     ld hl, STR_PASSED
     call print_string
 
-    ld b, 0
-    ld c, 3
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y + 1
     ld hl, STR_TESTED
     call print_string
 
@@ -223,22 +238,22 @@ Paging_Test:
     jr nz, Basic_Page_Write_Failed
 
 Page_Test_Passed:
-    ld b, 0
-    ld c, 4
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y + 2
     ld hl, STR_PAGING_WORKS
     call print_string
     jr done_testing
 
 Basic_Page_Write_Failed:
-    ld b, 0
-    ld c, 4
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y + 2
     ld hl, STR_READBACK_FAILED_PAGED
     call print_string
     jr done_testing
 
 Basic_Page_Read_Failed:
-    ld b, 0
-    ld c, 4
+    ld b, CONSOLE_START_X
+    ld c, CONSOLE_START_Y + 2
     ld hl, STR_PAGE_SWITCH_FAILED
     call print_string
     jr done_testing
@@ -355,8 +370,13 @@ _print_string_inner:
 #endlocal
     ret
 
-STR_BANNER: .asciz "Soggy-1000 RAM tester +8K +Paged"
-STR_URL: .asciz "v3 https://www.leadedsolder.com"
+STR_INTRO: .asciz "Soggy-1000 v4"
+STR_INTRO_2: .asciz "Home Computer"
+STR_URL: .asciz "leadedsolder.com"
+
+STR_BANNER: .asciz "RAM Tester Turbo"
+STR_FEATURES: .asciz "+8K +Paged"
+
 STR_MIRRORED: .asciz "Mirroring detected at:"
 STR_READBACK_FAILED: .asciz "Readback didn't match!"
 STR_PASSED: .asciz "Memory test passed."
