@@ -130,7 +130,7 @@ BulkCopyToVDP:
     push bc
     call SetVDPWriteAddress
     pop bc
-    ld hl, de
+    ld hl, de ; HL is now pointing to system memory - the source
     ld c, VDP_DATA
     ; OTIR: Write to addr at C with (HL), decrement B until 0
     otir

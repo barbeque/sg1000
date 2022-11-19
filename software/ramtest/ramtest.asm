@@ -55,7 +55,7 @@ _really_ready_now:
 
     ; upload the logo to the VDP
     call UploadLogo
-    ; TODO: Draw the logo
+    ; draw the logo
     call DrawLogo
 
 _spin_forever:
