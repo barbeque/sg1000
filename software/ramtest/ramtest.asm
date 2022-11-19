@@ -54,8 +54,9 @@ _really_ready_now:
     call InitFontPalette
 
     ; upload the logo to the VDP
-    call Upload_Logo
+    call UploadLogo
     ; TODO: Draw the logo
+    call DrawLogo
 
 _spin_forever:
     jr _spin_forever
