@@ -120,3 +120,20 @@ _DumbMultiplyLoop:
     djnz _DumbMultiplyLoop
 #endlocal
     ret
+
+; Bulk copy a chunk of memory to the VDP
+; Arguments:
+;   B - Length of chunk
+;   DE - Pointer to the RAM/ROM that needs to be copied
+;   HL - Destination address on the VDP
+BulkCopyToVDP:
+    push bc
+    call SetVDPWriteAddress
+    pop bc
+    ld hl, de
+    ld c, VDP_DATA
+    ; OTIR: Write to addr at C with (HL), decrement B until 0
+    otir
+    ret
+
+

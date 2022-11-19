@@ -53,6 +53,13 @@ _really_ready_now:
     call DefineFont
     call InitFontPalette
 
+    ; upload the logo to the VDP
+    call Upload_Logo
+    ; TODO: Draw the logo
+
+_spin_forever:
+    jr _spin_forever
+
     ld b, 0
     ld c, 0
     ld hl, STR_BANNER
@@ -363,4 +370,6 @@ RAM_TEST_VALUES: .db $aa, $55, $cc, $00, $ff
 
 #include "../shared/vdp.asm"
 #include "../shared/font_8x8.asm"
+#include "../shared/logo.asm"
+#include "../shared/logo_wrapper.asm"
 #include "../shared/keyboard.asm"
