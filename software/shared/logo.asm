@@ -9,112 +9,112 @@ LOGO:
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $fe, $fe, $fc, $fc
-	.db $fc, $fc, $fe, $ff, $ff, $ff, $ff, $ff
-	.db $fe, $fc, $fc, $fe, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $f3, $80, $00, $00, $0e, $0f
-	.db $07, $01, $00, $00, $80, $c0, $f0, $fc
-	.db $3e, $1e, $0c, $00, $00, $c0, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $3f, $1f, $0f, $0f, $3f
-	.db $ff, $ff, $7e, $3e, $0e, $0e, $06, $07
-	.db $07, $07, $07, $0f, $1f, $7f, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $f8, $e0, $c0, $81, $01
-	.db $03, $03, $03, $03, $03, $03, $03, $01
-	.db $01, $80, $80, $c0, $f0, $fc, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $bf, $03, $00, $00, $e0, $f0
-	.db $f0, $f0, $f8, $f8, $f8, $f8, $f8, $f8
-	.db $f0, $f0, $60, $00, $01, $0f, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $7f, $3e, $1e
-	.db $1c, $1c, $0c, $0c, $0e, $0f, $1f, $1f
-	.db $1e, $3e, $7c, $fe, $ff, $fe, $fc, $f8
-	.db $f8, $f8, $f8, $fc, $fe, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $fc, $c0, $80, $03, $07, $07
-	.db $07, $07, $07, $07, $03, $01, $80, $00
-	.db $07, $01, $00, $00, $00, $00, $1f, $1f
-	.db $1f, $07, $00, $00, $00, $c0, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $7f, $07, $00, $00, $80, $c0
-	.db $c0, $c0, $c0, $c0, $c0, $81, $03, $0f
-	.db $ff, $ff, $00, $00, $00, $00, $fc, $fe
-	.db $fc, $f0, $00, $00, $03, $1f, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $fe, $1c, $18, $10, $70
-	.db $60, $60, $60, $e0, $f0, $f8, $fc, $f8
-	.db $f0, $f0, $e0, $30, $18, $10, $00, $00
-	.db $00, $00, $40, $e0, $f0, $fe, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $e3, $00, $00, $18, $3c, $3e
-	.db $3e, $3e, $3e, $3e, $1e, $0c, $00, $00
-	.db $3f, $0f, $00, $00, $00, $00, $ff, $ff
-	.db $ff, $3f, $00, $00, $00, $00, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $3f, $00, $00, $00, $03
-	.db $03, $03, $03, $07, $07, $0f, $1f, $7f
-	.db $ff, $ff, $07, $01, $00, $00, $e0, $f0
-	.db $e0, $81, $03, $07, $1f, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $80, $c0, $c0, $e0, $e0
-	.db $f0, $f0, $f8, $f8, $fc, $fc, $fe, $fe
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $e6, $e0, $e0, $c0, $e0, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $7f, $7f, $3f, $3e
+	.db $ff, $ff, $ff, $83, $83, $07, $07, $0f
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $fc, $fc, $fe, $ff, $ff, $ff, $ff, $ff
+	.db $07, $01, $00, $00, $80, $c0, $f0, $fc
+	.db $ff, $ff, $7e, $3e, $0e, $0e, $06, $07
+	.db $03, $03, $03, $03, $03, $03, $03, $01
+	.db $f0, $f0, $f8, $f8, $f8, $f8, $f8, $f8
+	.db $1c, $1c, $0c, $0c, $0e, $0f, $1f, $1f
+	.db $07, $07, $07, $07, $03, $01, $80, $00
+	.db $c0, $c0, $c0, $c0, $c0, $81, $03, $0f
+	.db $60, $60, $60, $e0, $f0, $f8, $fc, $f8
+	.db $3e, $3e, $3e, $3e, $1e, $0c, $00, $00
+	.db $03, $03, $03, $07, $07, $0f, $1f, $7f
+	.db $f0, $f0, $f8, $f8, $fc, $fc, $fe, $fe
 	.db $1e, $1c, $0c, $08, $00, $00, $00, $00
+	.db $0f, $1f, $1f, $1f, $3f, $3f, $7f, $7f
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $fe, $fc, $fc, $fe, $ff, $ff, $ff, $ff
+	.db $3e, $1e, $0c, $00, $00, $c0, $ff, $ff
+	.db $07, $07, $07, $0f, $1f, $7f, $ff, $ff
+	.db $01, $80, $80, $c0, $f0, $fc, $ff, $ff
+	.db $f0, $f0, $60, $00, $01, $0f, $ff, $ff
+	.db $1e, $3e, $7c, $fe, $ff, $fe, $fc, $f8
+	.db $07, $01, $00, $00, $00, $00, $1f, $1f
+	.db $ff, $ff, $00, $00, $00, $00, $fc, $fe
+	.db $f0, $f0, $e0, $30, $18, $10, $00, $00
+	.db $3f, $0f, $00, $00, $00, $00, $ff, $ff
+	.db $ff, $ff, $07, $01, $00, $00, $e0, $f0
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $00, $00, $81, $81, $83, $83, $03, $07
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $f8, $f8, $f8, $fc, $fe, $ff, $ff, $ff
+	.db $1f, $07, $00, $00, $00, $c0, $ff, $ff
+	.db $fc, $f0, $00, $00, $03, $1f, $ff, $ff
+	.db $00, $00, $40, $e0, $f0, $fe, $ff, $ff
+	.db $ff, $3f, $00, $00, $00, $00, $ff, $ff
+	.db $e0, $81, $03, $07, $1f, $ff, $ff, $ff
+	.db $ff, $e6, $e0, $e0, $c0, $e0, $ff, $ff
 	.db $07, $0f, $1f, $1f, $7f, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
-	.db $ff, $ff, $ff, $83, $83, $07, $07, $0f
-	.db $0f, $1f, $1f, $1f, $3f, $3f, $7f, $7f
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
+	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
@@ -129,4 +129,5 @@ LOGO:
 	.db $ff, $ff, $ff, $ff, $ff, $ff, $ff, $ff
 #define LOGO_WIDTH 16
 #define LOGO_HEIGHT 8
-#define LOGO_LENGTH 1024
+#define LOGO_LENGTH_TILES 128
+#define LOGO_LENGTH_BYTES 1024

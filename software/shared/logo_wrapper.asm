@@ -1,6 +1,8 @@
 ; LOGO_START = 0x60
 #define LOGO_START FONTS_END + 1
 
+; TODO: OK, the LOGO array is wrong in memory... fix it
+
 UploadLogo:
 	ld de, LOGO
 	ld b, 255
@@ -25,8 +27,8 @@ UploadLogo:
 	; Now define the palette for these blocks
 	ld hl, COLOURS_BASE + (LOGO_START / 8)
 	call SetVDPWriteAddress
-	ld a, %00001111 ; white on black
-	.rept (LOGO_LENGTH / 8) + 1; ehhh
+	ld a, %11110000 ; white on black
+	.rept (LOGO_LENGTH_TILES / 8) + 1; ehhh
 	out (VDP_DATA), a
 	.endm
 
