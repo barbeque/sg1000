@@ -48,6 +48,7 @@ Many new features added on the base of the v0.2, and some bugs fixed. This was i
 
 Known bugs:
  * /JOY_SEL is not connected to the keyboard edge
+ * Page switching doesn't actually work (fix in development)
 
 # v0.2
  * SK-1100 keyboard edge connector added.
