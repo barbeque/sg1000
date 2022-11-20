@@ -1,8 +1,6 @@
 ; LOGO_START = 0x60
 #define LOGO_START FONTS_END + 1
 
-; TODO: OK, the LOGO array is wrong in memory... fix it
-
 #define UPLOAD_CHUNK_SIZE 255
 #define LOGO_COLOUR %01001101
 
