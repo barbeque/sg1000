@@ -15,7 +15,7 @@
 startup:
     ld sp, $c3ff ; set stack pointer like Girl's Garden does
     im 1
-    jr init
+    jp init
 
 .org $0038
     ; reset handler
