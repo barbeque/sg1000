@@ -57,6 +57,7 @@ _DrawLogo_NextRow:
 _DrawLogo_NextColumn:
 	ld a, d
 	out (VDP_DATA), a ; insert and increment to next column of VDP
+	nop_fudge
     inc d ; get next logo character index (they're sequential)
 	inc b ; next column of screen
 	ld a, b
