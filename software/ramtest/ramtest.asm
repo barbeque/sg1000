@@ -7,6 +7,7 @@
 #define PSG_REGISTERS $7f
 
 #include "../shared/vdp_macros.asm"
+#include "../shared/paging.asm"
 
 #target rom
 #data DATA, RAM_BASE, *
@@ -42,7 +43,7 @@ _busywait_inner:
     ret
 
 init:
-    call MutePSG ; we know for sure we are getting to here
+    call MutePSG ; if the PSG hum turns off we know we got here
     call BusyWait
 _really_ready_now:
 
@@ -191,16 +192,14 @@ Test_Passed:
 
 ; Begin paging test
 Paging_Test:
-    ld a, 0 ; page 1 of 4
-    out (PAGE_REGISTER), a
+    use_page 0
     ld a, $cc
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
     cp a, $cc
     jr nz, Basic_Page_Write_Failed
 
-    ld a, 1 ; page 2 of 4
-    out (PAGE_REGISTER), a
+    use_page 1
     ld a, $aa
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
@@ -208,29 +207,25 @@ Paging_Test:
     jr nz, Basic_Page_Write_Failed
 
     ; Switch back to page 1 and make sure it's still the same
-    ld a, 0
-    out (PAGE_REGISTER), a
+    use_page 0
     ld a, (RAM_PAGED_BASE)
     cp a, $cc
     jr nz, Basic_Page_Read_Failed
 
     ; ...and then back again, and read again.
-    ld a, 1
-    out (PAGE_REGISTER), a
+    use_page 1
     ld a, (RAM_PAGED_BASE)
     cp a, $aa
     jr nz, Basic_Page_Read_Failed
 
-    ld a, 2 ; page 3 of 4
-    out (PAGE_REGISTER), a
+    use_page 2
     ld a, $de
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
     cp a, $de
     jr nz, Basic_Page_Write_Failed
 
-    ld a, 3 ; page 4 of 4
-    out (PAGE_REGISTER), a
+    use_page 3
     ld a, $55
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
