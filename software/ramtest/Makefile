@@ -12,6 +12,9 @@ ramtest.sc: ramtest.asm ../shared/*.asm
 run: ramtest.sc
 	cd ${MAME_PATH} && ./mame64 ${TEST_SYSTEM} -cart ${local_path}ramtest.sc
 
+run_deployment: pad ramtest.padded.bin
+	cd ${MAME_PATH} && ./mame64 ${TEST_SYSTEM} -cart ${local_path}ramtest.padded.bin
+
 debug: ramtest.sc
 	cd ${MAME_PATH} && ./mame64 ${TEST_SYSTEM} -debug -cart ${local_path}ramtest.sc
 
