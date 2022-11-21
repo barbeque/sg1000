@@ -38,6 +38,7 @@ This version is in active development and may not be suitable for testing yet.
  * Debounce circuit on NMI pin using a Schmitt trigger (design from [this Tynemouth Software blog entry](http://blog.tynemouthsoftware.co.uk/2022/07/how-the-mini-pet-works-debouncing.html), thank you)
  * Weird overpour onto expansion edge fixed, as were some missing silkscreens for '574 and '04
  * Rudimentary support for Sega Genesis/Mega Drive controllers. No mode switching, so it is a similar limitation to Master System games on the Genesis.
+ * Trim pot for fine tuning of TMS9918 input clock (and therefore colourburst/Z80/sound clock.) Can be replaced with a simple wire link if you are feeling brave.
 
 # v0.3
 Many new features added on the base of the v0.2, and some bugs fixed. This was intended to be the first public release, and is recommended for most people.
