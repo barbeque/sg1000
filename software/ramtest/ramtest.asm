@@ -9,6 +9,22 @@
 #include "../shared/vdp_macros.asm"
 #include "../shared/paging.asm"
 
+; wrapper for page switching that also
+; puts the current page number in the lower
+; right corner of the screen (for debugging later)
+.macro switch_page page
+    use_page \page
+    ; update the screen to show the current page
+    push bc
+    ld b, TILEMAP_WIDTH - 1
+    ld c, TILEMAP_HEIGHT - 1
+    calculate_write_address_from_xy
+    call SetVDPWriteAddress
+    ld a, \page + $10  ; $10 is '0'
+    out (VDP_DATA), a
+    pop bc
+.endm
+
 #target rom
 #data DATA, RAM_BASE, *
 #code rom, 0x0000, *
@@ -58,6 +74,8 @@ _really_ready_now:
     call UploadLogo
     ; draw the logo
     call DrawLogo
+
+    switch_page 0
 
     ld b, LOGO_WIDTH
     ld c, 1
@@ -192,14 +210,14 @@ Test_Passed:
 
 ; Begin paging test
 Paging_Test:
-    use_page 0
+    switch_page 0
     ld a, $cc
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
     cp a, $cc
     jr nz, Basic_Page_Write_Failed
 
-    use_page 1
+    switch_page 1
     ld a, $aa
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
@@ -207,25 +225,25 @@ Paging_Test:
     jr nz, Basic_Page_Write_Failed
 
     ; Switch back to page 1 and make sure it's still the same
-    use_page 0
+    switch_page 0
     ld a, (RAM_PAGED_BASE)
     cp a, $cc
     jr nz, Basic_Page_Read_Failed
 
     ; ...and then back again, and read again.
-    use_page 1
+    switch_page 1
     ld a, (RAM_PAGED_BASE)
     cp a, $aa
     jr nz, Basic_Page_Read_Failed
 
-    use_page 2
+    switch_page 2
     ld a, $de
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
     cp a, $de
     jr nz, Basic_Page_Write_Failed
 
-    use_page 3
+    switch_page 3
     ld a, $55
     ld (RAM_PAGED_BASE), a
     ld a, (RAM_PAGED_BASE)
