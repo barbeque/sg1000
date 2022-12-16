@@ -11,6 +11,17 @@ InitText:
     ld hl, 0
     ld (TEXT_INSERTION_POINT), hl
     ld bc, TEXT_BUFFER_LENGTH
+#local
+    ld hl, TEXT_BUFFER
+_InitText_ClearBuffer:
+    ld (hl), 0
+    inc hl
+
+    dec bc
+    ld a, b
+    or c
+    jp nz, _InitText_ClearBuffer
+#endlocal
     ret
 
 SetVDPWriteAddressFromInsertionPoint:
@@ -37,3 +48,4 @@ PutChar_Append:
     ld hl, (TEXT_INSERTION_POINT)
     inc hl
     ld (TEXT_INSERTION_POINT), hl
+    ret
