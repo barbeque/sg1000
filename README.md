@@ -25,6 +25,7 @@ TODO: Use IOW + $10 to set it
 The following people helped me figure out some aspect of the SG-1000, fixed a bug in my hardware, or otherwise contributed.
 
  * Enri for providing [SC-3000 and SG-1000 schematics](http://www43.tok2.com/home/cmpslv/Sc3000/EnrSC.htm)
+ * Chartreuse for spotting a bug with the latch responsible for page switching
  * Nick Hook from SC-3000 Survivors helped with providing diagrams, pictures, and SF-7000 information
  * Fabio Dalla Libera (sms power) helped with the M1 transistor
  * asynchronous (sms power) also helped with the M1 transistor
