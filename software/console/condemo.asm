@@ -55,10 +55,33 @@ really_ready:
     call InitFontPalette
     call InitText
 
-    ld a, 'A'
+    ld a, 'H'
     call PutChar
+    ld a, 'i'
+    call PutChar_Append
+    ld a, ' '
+    call PutChar_Append
+    ld a, 'T'
+    call PutChar_Append
+    ld a, 'h'
+    call PutChar_Append
+    ld a, 'e'
+    call PutChar_Append
+    ld a, 'r'
+    call PutChar_Append
+    ld a, 'e'
+    call PutChar_Append
 
+    ld a, 'A'
 loop_forever:
+    ; Right now this overflows, which is a problem with my logic elsewhere
+    push af
+    call PutChar ; _Append can overflow
+    pop af
+    inc a
+    cp a, 'Z' + 1
+    jr nz, loop_forever
+    ld a, 'A'
     jr loop_forever
 
 #include "../shared/vdp.asm"
