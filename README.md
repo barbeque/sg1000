@@ -31,7 +31,7 @@ The following people helped me figure out some aspect of the SG-1000, fixed a bu
  * asynchronous (sms power) also helped with the M1 transistor
 
 ## Version History
-# v0.4 (in development)
+# v0.4 (in testing)
 This version is in active development and may not be suitable for testing yet.
 
  * /JOY_SEL signal connected to keyboard edge, allowing keyboard 8255 to force polling of joysticks when row 7 of matrix is requested.
