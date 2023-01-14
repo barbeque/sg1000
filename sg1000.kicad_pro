@@ -450,7 +450,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "sg1000.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
