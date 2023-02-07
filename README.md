@@ -50,6 +50,7 @@ Many new features added on the base of the v0.2, and some bugs fixed. This was i
 
 Known bugs:
  * /JOY_SEL is not connected to the keyboard edge
+ * Load input on memory management 74ls573 is inverted and doesn't work
 
 # v0.2
  * SK-1100 keyboard edge connector added.
