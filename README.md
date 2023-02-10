@@ -31,6 +31,11 @@ The following people helped me figure out some aspect of the SG-1000, fixed a bu
  * asynchronous (sms power) also helped with the M1 transistor
 
 ## Version History
+# v0.5 (in development)
+This version contains experimental features.
+
+ * Wider holes on the boot ROM socket footprint, to accept a Textool/AliExpress-style ZIF socket for easier ROM changes during development
+
 # v0.4 (in testing)
 This version is in active development and may not be suitable for testing yet.
 

@@ -4643,7 +4643,6 @@
     )
   )
 
-
   (junction (at 438.15 58.42) (diameter 0) (color 0 0 0 0)
     (uuid 000604cd-dc86-49e0-bc37-010281ac0327)
   )
@@ -12168,7 +12167,7 @@
     (property "Value" "27C256" (id 1) (at 63.6144 652.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W15.24mm" (id 2) (at 61.595 681.355 0)
+    (property "Footprint" "LeadedSolder:DIP-28_W15.24mm_ZIF_Pads" (id 2) (at 61.595 681.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0014.pdf" (id 3) (at 61.595 681.355 0)
@@ -12660,7 +12659,7 @@
       (reference "U4") (unit 5) (value "74LS32") (footprint "Package_DIP:DIP-14_W7.62mm_LongPads")
     )
     (path "/ff991c36-e6d2-4301-a90b-2c025ba4a1f0"
-      (reference "U5") (unit 1) (value "27C256") (footprint "Package_DIP:DIP-28_W15.24mm")
+      (reference "U5") (unit 1) (value "27C256") (footprint "LeadedSolder:DIP-28_W15.24mm_ZIF_Pads")
     )
     (path "/02bf6642-3f14-4e79-aba5-8a32820b8438"
       (reference "U6") (unit 1) (value "74LS573") (footprint "Package_DIP:DIP-20_W7.62mm_Socket_LongPads")
