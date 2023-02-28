@@ -35,6 +35,7 @@ The following people helped me figure out some aspect of the SG-1000, fixed a bu
 This version contains experimental features.
 
  * Wider holes on the boot ROM socket footprint, to accept a Textool/AliExpress-style ZIF socket for easier ROM changes during development
+ * 1206 ferrite bead on video path to prevent colour burst noise
 
 # v0.4 (in testing)
 This version is in active development and may not be suitable for testing yet.
