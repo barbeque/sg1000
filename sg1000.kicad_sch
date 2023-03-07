@@ -7178,11 +7178,6 @@
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid 241e0c85-4796-48eb-a5a0-1c0f2d6e5910)
   )
-  (text "TODO: Add the ferrite bead from Leako back in here"
-    (at 305.435 154.305 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 28c34151-ad81-4c77-bee6-a993c20083ba)
-  )
   (text "Power" (at 402.59 26.67 0)
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid 2e45b3b7-41c5-4f0e-a799-4c9f85b27ae0)
@@ -7190,6 +7185,11 @@
   (text "CPU" (at 19.05 21.59 0)
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid 386ad9e3-71fa-420f-8722-88548b024fc5)
+  )
+  (text "Feb 2023: added ferrite bead to improve video quality"
+    (at 299.72 156.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 3cc778e2-aa7c-4f85-b25b-d661d0e5cf4f)
   )
   (text "NB: XTAL1 (pin 39) appears to be the clock sink" (at 182.245 190.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
