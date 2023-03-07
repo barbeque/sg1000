@@ -7191,10 +7191,9 @@
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid 386ad9e3-71fa-420f-8722-88548b024fc5)
   )
-  (text "TODO: The trim cap should be on \"XTAL1\" - but is XTAL1 pin 40 or pin 39?\nTI's datasheet disagrees with itself, even on the same page!"
-    (at 129.54 186.055 0)
+  (text "NB: XTAL1 (pin 39) appears to be the clock sink" (at 182.245 190.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 3eb9ee0f-e8f9-4cd7-b809-6f552920c0d2)
+    (uuid 43d45407-1872-4d43-a661-973a38a988da)
   )
   (text "CSCN4 = Mark III only, and it seems to\nbe shorted to B1 on real SG-1000 carts,\nso we're going to use this signal for\ncartridge detection."
     (at 85.09 520.7 0)
