@@ -5619,6 +5619,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 468ecb57-4ff0-4e7b-a9fc-8e6bdb7f3dd7)
   )
+  (wire (pts (xy 299.085 205.74) (xy 309.88 205.74))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 46b5251e-dfa1-47c4-aea2-01e8145e2d3a)
+  )
   (wire (pts (xy 197.485 193.675) (xy 206.375 193.675))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 475ed8b3-90bf-48cd-bce5-d8f48b689541)
@@ -6066,7 +6070,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7ada2eef-03b4-46a6-8836-88aedeee76dc)
   )
-  (wire (pts (xy 284.48 205.74) (xy 309.88 205.74))
+  (wire (pts (xy 284.48 205.74) (xy 294.005 205.74))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7b3731f3-bcf9-484f-85fc-cac66c282e05)
   )
@@ -7311,7 +7315,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid db398b6c-f0b9-42b0-8bc6-582b1ac7afe1)
   )
-  (text "Mar 2023: Added RC filter (thanks keegs)" (at 290.195 199.39 0)
+  (text "Mar 2023: Added RC filter, ferrite bead (thanks keegs)"
+    (at 290.195 199.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e50427e4-5cfd-4d7a-abfc-daa93aa55f3b)
   )
@@ -10786,7 +10791,7 @@
   (symbol (lib_id "Device:C_Small") (at 275.59 211.455 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 733340a5-e748-4578-bc19-cbac72592315)
-    (property "Reference" "C?" (id 0) (at 278.13 210.1912 0)
+    (property "Reference" "C17" (id 0) (at 278.13 210.1912 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6800pF" (id 1) (at 278.13 212.7312 0)
@@ -11128,7 +11133,7 @@
   (symbol (lib_id "power:GND") (at 275.59 213.995 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 887a70d4-8e49-469b-a283-bff451b228c3)
-    (property "Reference" "#PWR?" (id 0) (at 275.59 220.345 0)
+    (property "Reference" "#PWR0163" (id 0) (at 275.59 220.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 275.59 219.075 0))
@@ -11666,6 +11671,26 @@
     )
     (pin "14" (uuid d0ba79a9-a43e-4447-bf68-e148f9bcff1f))
     (pin "7" (uuid a683e66a-5ffb-4323-8a22-f5b7df36f56a))
+  )
+
+  (symbol (lib_id "Device:FerriteBead_Small") (at 296.545 205.74 270) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid baaacc76-ddd4-4518-8eb9-ed7f2c13c590)
+    (property "Reference" "FB?" (id 0) (at 296.5831 201.93 90))
+    (property "Value" "FerriteBead_Small" (id 1) (at 296.5831 201.93 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder" (id 2) (at 296.545 203.962 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 296.545 205.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DigiKey" "283-MFBW1V3216-310-RCT-ND" (id 4) (at 296.545 205.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 06775073-58d3-4d62-a894-ef8c228f0656))
+    (pin "2" (uuid 3d54a36b-5f88-46c8-b8f6-476e21d6f5ec))
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 458.47 67.31 180) (unit 1)
@@ -12599,6 +12624,9 @@
     (path "/5646e3ec-0d45-47c1-830b-1c531076fe16"
       (reference "#PWR0162") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/887a70d4-8e49-469b-a283-bff451b228c3"
+      (reference "#PWR0163") (unit 1) (value "GND") (footprint "")
+    )
     (path "/7b2ce55a-71a5-40a8-8c5d-5c89f1d28c4a"
       (reference "#PWR0164") (unit 1) (value "+5V") (footprint "")
     )
@@ -12616,9 +12644,6 @@
     )
     (path "/5eea1ec4-fab8-4b42-9ac7-b57458428ce4"
       (reference "#PWR0169") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/887a70d4-8e49-469b-a283-bff451b228c3"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005e7d9a30"
       (reference "C1") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
@@ -12650,11 +12675,11 @@
     (path "/e7915281-0783-4023-86b4-fb0b094dd0fa"
       (reference "C16") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
+    (path "/733340a5-e748-4578-bc19-cbac72592315"
+      (reference "C17") (unit 1) (value "6800pF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+    )
     (path "/7bce4e6e-1885-420f-99a0-91aa8ceecec3"
       (reference "C100") (unit 1) (value "0.1µF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
-    )
-    (path "/733340a5-e748-4578-bc19-cbac72592315"
-      (reference "C?") (unit 1) (value "6800pF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00006285154d"
       (reference "CN1") (unit 1) (value "Conn_01x07_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical")
@@ -12673,6 +12698,9 @@
     )
     (path "/43869f2f-9cd6-4f1f-b6e4-613d616a6ac6"
       (reference "FB1") (unit 1) (value "FerriteBead_Small") (footprint "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder")
+    )
+    (path "/baaacc76-ddd4-4518-8eb9-ed7f2c13c590"
+      (reference "FB?") (unit 1) (value "FerriteBead_Small") (footprint "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder")
     )
     (path "/29d819aa-b433-48a1-9c7f-65135350c51c"
       (reference "J1") (unit 1) (value "USB-B1HSB6") (footprint "USB-B1HSB6:OST_USB-B1HSB6")
