@@ -41,4 +41,6 @@
 - [x] [Memory Mapper] find a spot on the board for it
 - [ ] [Keyboard] Find out if it is possible to get 6u spacebars or if 6.25u is needed
 - [x] [Software] RAM tester, in Z80 assembly so we can control the RAM.
-- [ ] Build a clone of the BASIC III-B cartridge to ensure /CS_WRAM pullup works
+- [x] Build a clone of the BASIC III-B cartridge to ensure /CS_WRAM pullup works
+- [x] 24kHz LPF on audio output
+- [x] better cap (0.22uF film?) on audio output
