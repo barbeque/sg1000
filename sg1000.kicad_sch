@@ -7264,6 +7264,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 71f92193-19b0-44ed-bc7f-77535083d769)
   )
+  (text "Mar 2023: Replaced footprint (thanks keegs)" (at 132.08 423.545 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 744669be-8909-469d-8f2d-6f5e6f6f3203)
+  )
   (text "I/O Write signal is SC-3000 specific,\ndon't tell Sega we added it here!"
     (at 84.455 539.115 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -9761,7 +9765,7 @@
     (property "Value" "DB9_Female" (id 1) (at 128.397 385.318 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LeadedSolder:A-DS 09 A-KG-T2S" (id 2) (at 123.825 384.175 0)
+    (property "Footprint" "LeadedSolder:Assman-A-DS_09_A-KG-T2S-Correct" (id 2) (at 123.825 384.175 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 123.825 384.175 0)
@@ -9833,7 +9837,7 @@
     (property "Value" "DB9_Female" (id 1) (at 165.862 441.833 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LeadedSolder:A-DS 09 A-KG-T2S" (id 2) (at 161.29 440.69 0)
+    (property "Footprint" "LeadedSolder:Assman-A-DS_09_A-KG-T2S-Correct" (id 2) (at 161.29 440.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 161.29 440.69 0)
@@ -11676,7 +11680,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 296.545 205.74 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid baaacc76-ddd4-4518-8eb9-ed7f2c13c590)
-    (property "Reference" "FB?" (id 0) (at 296.5831 201.93 90))
+    (property "Reference" "FB16" (id 0) (at 296.5831 201.93 90))
     (property "Value" "FerriteBead_Small" (id 1) (at 296.5831 201.93 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -12700,7 +12704,7 @@
       (reference "FB1") (unit 1) (value "FerriteBead_Small") (footprint "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder")
     )
     (path "/baaacc76-ddd4-4518-8eb9-ed7f2c13c590"
-      (reference "FB?") (unit 1) (value "FerriteBead_Small") (footprint "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder")
+      (reference "FB16") (unit 1) (value "FerriteBead_Small") (footprint "Inductor_SMD:L_1206_3216Metric_Pad1.22x1.90mm_HandSolder")
     )
     (path "/29d819aa-b433-48a1-9c7f-65135350c51c"
       (reference "J1") (unit 1) (value "USB-B1HSB6") (footprint "USB-B1HSB6:OST_USB-B1HSB6")
@@ -12712,10 +12716,10 @@
       (reference "J3") (unit 1) (value "RCJ-013") (footprint "Jacks:CUI_RCJ-017")
     )
     (path "/00000000-0000-0000-0000-00006251d48a"
-      (reference "JOY1") (unit 1) (value "DB9_Female") (footprint "LeadedSolder:A-DS 09 A-KG-T2S")
+      (reference "JOY1") (unit 1) (value "DB9_Female") (footprint "LeadedSolder:Assman-A-DS_09_A-KG-T2S-Correct")
     )
     (path "/00000000-0000-0000-0000-000062390cb1"
-      (reference "JOY2") (unit 1) (value "DB9_Female") (footprint "LeadedSolder:A-DS 09 A-KG-T2S")
+      (reference "JOY2") (unit 1) (value "DB9_Female") (footprint "LeadedSolder:Assman-A-DS_09_A-KG-T2S-Correct")
     )
     (path "/bdf419c2-3253-4c0f-adae-898f30249034"
       (reference "JP1") (unit 1) (value "Jumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm")
