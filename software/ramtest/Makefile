@@ -1,6 +1,7 @@
 ZASM_FLAGS := --labels
 local_path = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
+# change to test sk1100 vs. built in
 TEST_SYSTEM = "sg1000"
 #TEST_SYSTEM = "sc3000"
 
