@@ -84,7 +84,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "mark-iii-romcart-v0.3")
+      (outputdirectory "gerber")
     )
   )
 

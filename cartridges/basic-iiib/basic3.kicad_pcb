@@ -84,7 +84,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "soggy-basic3-v0.1")
+      (outputdirectory "gerber")
     )
   )
 
