@@ -24,6 +24,7 @@ The Soggy is basically identical to the existing SG-1000, with the addition (in 
 
 TODO: Memory map diagram
 TODO: Use IOW + $10 to set it
+TODO: Address will change soon to improve compatibility later
 
 ## Special Thanks
 The following people helped me figure out some aspect of the SG-1000, fixed a bug in my hardware, or otherwise contributed.
