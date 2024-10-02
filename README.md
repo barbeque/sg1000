@@ -17,6 +17,8 @@ Please match the BOM with the appropriate version - the files here in master are
 
 TODO
 
+All solder jumpers should be left as they are from fabrication. They were meant solely so that prototype features could be removed if they didn't work out instead of spinning a new board.
+
 ## Programmer's Guide
 The Soggy is basically identical to the existing SG-1000, with the addition (in v0.3 and onwards) of memory mapping hardware. This hardware allows programmers to take advantage of the full 32k of main RAM on the system.
 
