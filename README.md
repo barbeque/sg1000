@@ -12,6 +12,13 @@ This repository contains multiple KiCad projects that are related to the overall
  * `cartridges/romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000
  * `cartridges/basic-iiib`: An implementation of the SEGA BASIC Level IIIB cartridge, used for testing purposes in order to make sure cartridges can take over the entire memory map (Untested)
 
+## Other Projects
+Other builders have made projects that work with the Soggy! I can't take credit for them. Please visit their repos:
+
+ * [`soggy-case`](https://github.com/kvanderlaag/soggy-case): A 3D-printed case for the Soggy v0.4 and onwards.
+
+Thank you to everyone who has built something for the Soggy!
+
 ## Assembly Guide and BOM
 Please match the BOM with the appropriate version - the files here in master are currently post-v4 improvements and some parts may be missing or changed their values when compared with the ones in `sg1000-v0.4.bom.csv`
 
