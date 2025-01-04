@@ -9,8 +9,9 @@ The Soggy project is licensed under [the Creative Commons Attribution-NonCommerc
 This repository contains multiple KiCad projects that are related to the overall Soggy project. These are:
 
  * `keyboard`: An implementation of the SK-1100 keyboard, using modern key switches (Under development)
- * `cartridges/romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000
- * `cartridges/basic-iiib`: An implementation of the SEGA BASIC Level IIIB cartridge, used for testing purposes in order to make sure cartridges can take over the entire memory map (Untested)
+ * `cartridges/romcart`: An implementation of a bare-bones (ROM-only) cartridge for SG-1000 (Tested, working)
+ * `cartridges/basic-iiib`: An implementation of the SEGA BASIC Level IIIB cartridge, used for testing purposes in order to make sure cartridges can take over the entire memory map (Tested, working)
+
 
 ## Other Projects
 Other builders have made projects that work with the Soggy! I can't take credit for them. Please visit their repos:
