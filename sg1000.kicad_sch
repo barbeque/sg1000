@@ -14122,6 +14122,12 @@
 		(uuid "74ab2e71-7fe1-4f83-a1fa-4c7c9c12e7ae")
 	)
 	(junction
+		(at 167.64 165.735)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b0d0001-46e7-43b8-9115-080fc10de997")
+	)
+	(junction
 		(at 157.48 557.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14144,12 +14150,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d063f79-9282-4820-bcf4-1ff3c006cf08")
-	)
-	(junction
-		(at 177.165 165.735)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e1defc0-5d37-4d87-a43a-d4f377a6ab94")
 	)
 	(junction
 		(at 248.285 76.835)
@@ -15039,6 +15039,16 @@
 	)
 	(wire
 		(pts
+			(xy 183.515 165.735) (xy 186.69 165.735)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb3e33a-e6e1-4252-9ee1-22d7bae5424d")
+	)
+	(wire
+		(pts
 			(xy 234.95 234.95) (xy 238.76 234.95)
 		)
 		(stroke
@@ -15819,16 +15829,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.165 165.735) (xy 186.69 165.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bf2c3f2-0f78-4672-bb2c-5cc93cd1aeb5")
-	)
-	(wire
-		(pts
 			(xy 66.04 542.29) (xy 73.66 542.29)
 		)
 		(stroke
@@ -15846,16 +15846,6 @@
 			(type default)
 		)
 		(uuid "3c2c65a6-d636-4ab7-87d6-7a98a11f2424")
-	)
-	(wire
-		(pts
-			(xy 172.72 165.735) (xy 177.165 165.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c434dd2-680d-445a-b238-175ec11c5838")
 	)
 	(polyline
 		(pts
@@ -17329,7 +17319,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.685 170.815) (xy 177.165 170.815)
+			(xy 146.685 170.815) (xy 167.64 170.815)
 		)
 		(stroke
 			(width 0)
@@ -19626,6 +19616,16 @@
 			(type default)
 		)
 		(uuid "eef16b99-6d89-4a50-ae41-18b9ba614cb1")
+	)
+	(wire
+		(pts
+			(xy 167.64 165.735) (xy 178.435 165.735)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0c8e80-e661-4521-8c8a-51ac1729524d")
 	)
 	(wire
 		(pts
@@ -35385,7 +35385,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 170.18 165.735 90)
+		(at 180.975 165.735 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35394,7 +35394,7 @@
 		(fields_autoplaced yes)
 		(uuid "9cbdd3ba-ae69-41bd-8a23-0591d1fa7279")
 		(property "Reference" "R22"
-			(at 170.18 160.02 90)
+			(at 180.975 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35402,7 +35402,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 170.18 162.56 90)
+			(at 180.975 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35410,7 +35410,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 170.18 165.735 0)
+			(at 180.975 165.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35419,7 +35419,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 165.735 0)
+			(at 180.975 165.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35428,7 +35428,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 170.18 165.735 0)
+			(at 180.975 165.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35437,7 +35437,7 @@
 			)
 		)
 		(property "DigiKey" "RMCF0805FT100KCT-ND"
-			(at 170.18 165.735 0)
+			(at 180.975 165.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38453,7 +38453,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 177.165 168.275 0)
+		(at 167.64 168.275 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38462,7 +38462,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7915281-0783-4023-86b4-fb0b094dd0fa")
 		(property "Reference" "C16"
-			(at 180.34 167.0112 0)
+			(at 170.815 167.0112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38471,7 +38471,7 @@
 			)
 		)
 		(property "Value" "0.1µF"
-			(at 180.34 169.5512 0)
+			(at 170.815 169.5512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38480,7 +38480,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 177.165 168.275 0)
+			(at 167.64 168.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38489,7 +38489,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.165 168.275 0)
+			(at 167.64 168.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38498,7 +38498,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.165 168.275 0)
+			(at 167.64 168.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
