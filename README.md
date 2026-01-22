@@ -5,6 +5,8 @@ Soggy-1000 is an open-source clone of the Sega SG-1000 home videogame system. Th
 ## License
 The Soggy project is licensed under [the Creative Commons Attribution-NonCommercial 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
 
+If you want to build and sell a handful of these systems to use up a "minimum board order," let me know. I'll probably be okay with it!
+
 ## Sub-Projects
 This repository contains multiple KiCad projects that are related to the overall Soggy project. These are:
 
