@@ -33,7 +33,9 @@ All solder jumpers should be left as they are from fabrication. They were meant 
 The Soggy is basically identical to the existing SG-1000, with the addition (in v0.3 and onwards) of memory mapping hardware. This hardware allows programmers to take advantage of the full 32k of main RAM on the system.
 
 TODO: Memory map diagram
+
 TODO: Use IOW + $10 to set it
+
 TODO: Address will change soon to improve compatibility later
 
 ## Special Thanks
