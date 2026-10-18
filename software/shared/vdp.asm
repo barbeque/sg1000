@@ -41,6 +41,7 @@ ScreenInit:
     write_vdp_register 3, %00001101
     ; set pattern generator to $0800
     write_vdp_register 4, %00000001
+    ; sprite attribute table address
     write_vdp_register 5, %00001111
     ; sprite generator table address
     write_vdp_register 6, %00000111 ; FIXME: don't know where to put this, cram it high up
