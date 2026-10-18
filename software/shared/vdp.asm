@@ -35,15 +35,15 @@ ScreenInit:
     ; 16K, graphics mode 0, enable display, no retrace interrupt
     ; mode 0 (32x24, 768 element pattern name table w/o sprites)
     write_vdp_register 1, %11000000
-    ; set pattern name (tilemap) table to $0000
+    ; set pattern name (tilemap) table to $0000 (bits pn13..pn10)
     write_vdp_register 2, %00000000
-    ; set colour table to come right after PN table; $0340
+    ; set colour table to come right after PN table; $0340 (bits ct13..ct6)
     write_vdp_register 3, %00001101
-    ; set pattern generator to $0800
+    ; set pattern generator to $0800 (bits pg13..pg11 -> $800)
     write_vdp_register 4, %00000001
-    ; sprite attribute table address
+    ; sprite attribute table address (bits sa13..sa7 -> $780?)
     write_vdp_register 5, %00001111
-    ; sprite generator table address
+    ; sprite generator table address (bits sg13..sg11 -> $3800?)
     write_vdp_register 6, %00000111 ; FIXME: don't know where to put this, cram it high up
     ; low nibble = background colour
     write_vdp_register 7, %00100000
